@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan6 -refsym in8bit D:/XilinxNotVM/Project/lab8/in8bit.sch D:/XilinxNotVM/Project/lab8/in8bit.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl in8bit_drc.vhf -w D:/XilinxNotVM/Project/lab8/in8bit.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl in8bit_drc.vhf -w D:/XilinxNotVM/Project/lab8/in8bit.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl in8bit_drc.vhf -w D:/XilinxNotVM/Project/lab8/in8bit.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl in8bit_drc.vhf -w D:/XilinxNotVM/Project/lab8/in8bit.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl in8bit_drc.vhf -w D:/XilinxNotVM/Project/lab8/in8bit.sch 

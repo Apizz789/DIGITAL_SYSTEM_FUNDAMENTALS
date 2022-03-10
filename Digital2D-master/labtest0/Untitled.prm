@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\XilinxNotVM\Project\labtest0//Untitled -s 1024 -u 0000 D:/XilinxNotVM/Project/labtest0/labtest0.bit -spi 
+
+PROM D:\XilinxNotVM\Project\labtest0\Untitled.prm map: Thu Nov 29 13:36:34 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          1024K
+PROM start    0000:0000
+PROM end      000f:ffff
+PROM checksum 0ac755bb
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Nov 29 13:35:56 2018 D:/XilinxNotVM/Project/labtest0/labtest0.bit

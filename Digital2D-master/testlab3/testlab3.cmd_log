@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/testlab3/testlab3.xst" -ofn "D:/XilinxNotVM/Project/testlab3/testlab3.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/testlab3/testlab3.xst" -ofn "D:/XilinxNotVM/Project/testlab3/testlab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc testlab3.ucf -p xc6slx9-tqg144-3 testlab3.ngc testlab3.ngd  
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/testlab3/testlab3.xst" -ofn "D:/XilinxNotVM/Project/testlab3/testlab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc testlab3.ucf -p xc6slx9-tqg144-3 testlab3.ngc testlab3.ngd  
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/testlab3/testlab3.xst" -ofn "D:/XilinxNotVM/Project/testlab3/testlab3.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/testlab3/testlab3.xst" -ofn "D:/XilinxNotVM/Project/testlab3/testlab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc testlab3.ucf -p xc6slx9-tqg144-3 testlab3.ngc testlab3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testlab3_map.ncd testlab3.ngd testlab3.pcf 
+par -w -intstyle ise -ol high -mt off testlab3_map.ncd testlab3.ncd testlab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testlab3.twx testlab3.ncd -o testlab3.twr testlab3.pcf -ucf testlab3.ucf 
+bitgen -intstyle ise -f testlab3.ut testlab3.ncd 

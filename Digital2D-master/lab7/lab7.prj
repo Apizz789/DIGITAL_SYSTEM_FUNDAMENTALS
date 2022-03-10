@@ -1,0 +1,6 @@
+vhdl work "Mod6.vhf"
+vhdl work "mod4.vhf"
+vhdl work "Mod10.vhf"
+vhdl work "decode2to4.vhf"
+vhdl work "BCD7Seg.vhf"
+vhdl work "lab7.vhf"

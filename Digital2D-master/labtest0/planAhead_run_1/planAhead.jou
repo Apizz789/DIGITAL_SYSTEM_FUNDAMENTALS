@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Nov 29 13:16:11 2018
+# Process ID: 8380
+# Log file: D:/XilinxNotVM/Project/labtest0/planAhead_run_1/planAhead.log
+# Journal file: D:/XilinxNotVM/Project/labtest0/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/XilinxNotVM/Project/labtest0/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  XLXN_1]]
+set_property package_pin "" [get_ports [list  XLXN_3]]
+startgroup
+set_property package_pin P66 [get_ports XLXN_1]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports XLXN_2]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports XLXN_3]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports XLXN_4]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports XLXN_5]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports XLXN_6]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports XLXN_7]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_11]]
+set_property package_pin "" [get_ports [list  XLXN_12]]
+startgroup
+set_property package_pin P82 [get_ports XLXN_11]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports XLXN_12]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_15]]
+startgroup
+set_property package_pin P81 [get_ports XLXN_12]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports XLXN_15]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports XLXN_16]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports XLXN_17]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_18]]
+set_property package_pin "" [get_ports [list  XLXN_19]]
+startgroup
+set_property package_pin P75 [get_ports XLXN_18]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_26]]
+startgroup
+set_property package_pin P74 [get_ports XLXN_19]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_26]]
+startgroup
+set_property package_pin P67 [get_ports XLXN_19]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports XLXN_18]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports XLXN_17]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports XLXN_17]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports XLXN_16]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports XLXN_15]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports XLXN_12]
+endgroup

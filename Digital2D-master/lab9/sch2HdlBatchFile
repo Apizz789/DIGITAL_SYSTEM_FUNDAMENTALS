@@ -1,0 +1,7 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/lab9.vhf,-w,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/lab9.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/KRxor8.vhf,-w,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/KRxor8.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/decode2to4.vhf,-w,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/decode2to4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/BCD16bit.vhf,-w,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/BCD16bit.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/decode32to8.vhf,-w,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/decode32to8.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/mod4.vhf,-w,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/mod4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/lab9.vhf,-w,C:/Users/dunkdink/Desktop/Digital2D-master/lab9/lab9.sch

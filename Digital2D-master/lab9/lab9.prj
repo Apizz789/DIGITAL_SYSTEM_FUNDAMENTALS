@@ -1,0 +1,7 @@
+vhdl work "mod4.vhf"
+vhdl work "KRxor8.vhf"
+vhdl work "decode32to8.vhf"
+vhdl work "decode2to4.vhf"
+vhdl work "BCD16bit.vhf"
+vhdl work "lab9.vhf"
+vhdl work "XOR8.vhf"

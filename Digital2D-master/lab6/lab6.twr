@@ -1,0 +1,91 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab6.twx lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf
+
+Design file:              lab6.ncd
+Physical constraint file: lab6.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock inPB1_P45 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Buz_P83     |        10.659(R)|      SLOW  |         5.567(R)|      FAST  |XLXN_623          |   0.000|
+            |        11.396(R)|      SLOW  |         6.065(R)|      FAST  |clk1              |   0.000|
+aP41        |         9.899(R)|      SLOW  |         5.373(R)|      FAST  |XLXN_623          |   0.000|
+            |         9.999(R)|      SLOW  |         5.562(R)|      FAST  |clk1              |   0.000|
+bP40        |         9.911(R)|      SLOW  |         5.471(R)|      FAST  |XLXN_623          |   0.000|
+            |        10.164(R)|      SLOW  |         5.608(R)|      FAST  |clk1              |   0.000|
+cP35        |         9.690(R)|      SLOW  |         5.134(R)|      FAST  |XLXN_623          |   0.000|
+            |         9.910(R)|      SLOW  |         5.415(R)|      FAST  |clk1              |   0.000|
+dP34        |        10.030(R)|      SLOW  |         5.417(R)|      FAST  |XLXN_623          |   0.000|
+            |        10.135(R)|      SLOW  |         5.659(R)|      FAST  |clk1              |   0.000|
+eP32        |         9.816(R)|      SLOW  |         5.272(R)|      FAST  |XLXN_623          |   0.000|
+            |        10.036(R)|      SLOW  |         5.512(R)|      FAST  |clk1              |   0.000|
+fP29        |        10.351(R)|      SLOW  |         5.431(R)|      FAST  |XLXN_623          |   0.000|
+            |        10.451(R)|      SLOW  |         5.568(R)|      FAST  |clk1              |   0.000|
+gP27        |        10.067(R)|      SLOW  |         5.358(R)|      FAST  |XLXN_623          |   0.000|
+            |        10.179(R)|      SLOW  |         5.639(R)|      FAST  |clk1              |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock OS_P123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OS_P123        |    0.909|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock inPB1_P45
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+inPB1_P45      |    2.108|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+inPB1_P45      |Buz_P83        |    8.799|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 21 19:19:56 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4583 MB
+
+
+

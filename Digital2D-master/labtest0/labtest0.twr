@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\XilinxNotVM\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3
+-s 3 -n 3 -fastpaths -xml labtest0.twx labtest0.ncd -o labtest0.twr
+labtest0.pcf -ucf labtest0.ucf
+
+Design file:              labtest0.ncd
+Physical constraint file: labtest0.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+XLXN_1         |XLXN_11        |    6.920|
+XLXN_1         |XLXN_26        |    8.042|
+XLXN_2         |XLXN_12        |    6.766|
+XLXN_2         |XLXN_31        |    8.330|
+XLXN_3         |XLXN_15        |    6.684|
+XLXN_3         |XLXN_32        |    8.042|
+XLXN_4         |XLXN_16        |    6.791|
+XLXN_4         |XLXN_33        |    8.763|
+XLXN_5         |XLXN_17        |    6.740|
+XLXN_5         |XLXN_34        |    8.062|
+XLXN_6         |XLXN_18        |    5.876|
+XLXN_6         |XLXN_35        |    8.097|
+XLXN_7         |XLXN_19        |    5.882|
+XLXN_7         |XLXN_36        |    8.301|
+XLXN_43        |XLXN_38        |    6.113|
+XLXN_43        |XLXN_39        |    8.064|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 29 13:35:46 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

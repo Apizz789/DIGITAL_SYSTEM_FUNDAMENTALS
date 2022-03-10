@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod10_drc.vhf -w D:/XilinxNotVM/Project/testlab3/Mod10.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Mod10 D:/XilinxNotVM/Project/testlab3/Mod10.sch D:/XilinxNotVM/Project/testlab3/Mod10.sym 

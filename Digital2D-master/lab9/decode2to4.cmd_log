@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl decode2to4_drc.vhf -w D:/XilinxNotVM/Project/lab9/decode2to4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym decode2to4 D:/XilinxNotVM/Project/lab9/decode2to4.sch D:/XilinxNotVM/Project/lab9/decode2to4.sym 

@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Nov 09 23:39:04 2018
+# Process ID: 4252
+# Log file: D:/XilinxNotVM/Project/lab7/planAhead_run_2/planAhead.log
+# Journal file: D:/XilinxNotVM/Project/lab7/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/XilinxNotVM/Project/lab7/pa.fromHdl.tcl
+# create_project -name lab7 -dir "D:/XilinxNotVM/Project/lab7/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab7.ucf" [current_fileset -constrset]
+Adding file 'D:/XilinxNotVM/Project/lab7/lab7.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Mod6.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {mod4.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Mod10.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {decode2to4.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BCD7Seg.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lab7.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top lab7 $srcset
+# add_files [list {lab7.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/Project/lab7/lab7.vhf" into library work
+Loading clock regions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/XilinxNotVM/Project/lab7/lab7.ucf]
+Finished Parsing UCF File [D:/XilinxNotVM/Project/lab7/lab7.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: d05f1cdc
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 595.160 ; gain = 100.848
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P26 [get_ports dotP26]
+endgroup
+set_property is_loc_fixed false [get_ports [list  dotP26]]
+set_property is_loc_fixed true [get_ports [list  dotP26]]
+startgroup
+set_property package_pin P123 [get_ports XLXN_166]
+endgroup
+save_constraints

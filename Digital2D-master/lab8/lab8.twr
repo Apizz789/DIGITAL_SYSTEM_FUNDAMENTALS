@@ -1,0 +1,187 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab8.twx lab8.ncd -o lab8.twr lab8.pcf -ucf lab8.ucf
+
+Design file:              lab8.ncd
+Physical constraint file: lab8.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock oscP123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+oscP123        |    0.872|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |P27            |   10.902|
+A<0>           |P29            |   11.266|
+A<0>           |P32            |   12.051|
+A<0>           |P34            |   11.664|
+A<0>           |P35            |   11.374|
+A<0>           |P40            |   12.223|
+A<0>           |P41            |   11.593|
+A<0>           |buzP83         |    9.626|
+A<1>           |P27            |   11.138|
+A<1>           |P29            |   11.502|
+A<1>           |P32            |   12.287|
+A<1>           |P34            |   11.900|
+A<1>           |P35            |   11.610|
+A<1>           |P40            |   12.459|
+A<1>           |P41            |   11.829|
+A<1>           |buzP83         |    9.862|
+A<2>           |P27            |   10.877|
+A<2>           |P29            |   11.241|
+A<2>           |P32            |   12.026|
+A<2>           |P34            |   11.639|
+A<2>           |P35            |   11.349|
+A<2>           |P40            |   12.198|
+A<2>           |P41            |   11.568|
+A<2>           |buzP83         |    9.601|
+A<3>           |P27            |   10.727|
+A<3>           |P29            |   11.091|
+A<3>           |P32            |   11.876|
+A<3>           |P34            |   11.489|
+A<3>           |P35            |   11.199|
+A<3>           |P40            |   12.048|
+A<3>           |P41            |   11.418|
+A<3>           |buzP83         |    9.451|
+A<4>           |P27            |   10.874|
+A<4>           |P29            |   11.238|
+A<4>           |P32            |   12.023|
+A<4>           |P34            |   11.636|
+A<4>           |P35            |   11.346|
+A<4>           |P40            |   12.195|
+A<4>           |P41            |   11.565|
+A<4>           |buzP83         |    9.598|
+A<5>           |P27            |   10.751|
+A<5>           |P29            |   11.115|
+A<5>           |P32            |   11.900|
+A<5>           |P34            |   11.513|
+A<5>           |P35            |   11.223|
+A<5>           |P40            |   12.072|
+A<5>           |P41            |   11.442|
+A<5>           |buzP83         |    9.475|
+A<6>           |P27            |   11.065|
+A<6>           |P29            |   11.429|
+A<6>           |P32            |   12.214|
+A<6>           |P34            |   11.827|
+A<6>           |P35            |   11.537|
+A<6>           |P40            |   12.386|
+A<6>           |P41            |   11.756|
+A<6>           |buzP83         |    9.789|
+A<7>           |P27            |   10.502|
+A<7>           |P29            |   10.866|
+A<7>           |P32            |   11.651|
+A<7>           |P34            |   11.264|
+A<7>           |P35            |   10.974|
+A<7>           |P40            |   11.823|
+A<7>           |P41            |   11.193|
+A<7>           |buzP83         |    9.226|
+B<0>           |P27            |   12.024|
+B<0>           |P29            |   12.388|
+B<0>           |P32            |   13.173|
+B<0>           |P34            |   12.786|
+B<0>           |P35            |   12.496|
+B<0>           |P40            |   13.345|
+B<0>           |P41            |   12.715|
+B<0>           |buzP83         |   10.748|
+B<1>           |P27            |   11.990|
+B<1>           |P29            |   12.354|
+B<1>           |P32            |   13.139|
+B<1>           |P34            |   12.752|
+B<1>           |P35            |   12.462|
+B<1>           |P40            |   13.311|
+B<1>           |P41            |   12.681|
+B<1>           |buzP83         |   10.714|
+B<2>           |P27            |   11.947|
+B<2>           |P29            |   12.311|
+B<2>           |P32            |   13.096|
+B<2>           |P34            |   12.709|
+B<2>           |P35            |   12.419|
+B<2>           |P40            |   13.268|
+B<2>           |P41            |   12.638|
+B<2>           |buzP83         |   10.671|
+B<3>           |P27            |   11.991|
+B<3>           |P29            |   12.355|
+B<3>           |P32            |   13.140|
+B<3>           |P34            |   12.753|
+B<3>           |P35            |   12.463|
+B<3>           |P40            |   13.312|
+B<3>           |P41            |   12.682|
+B<3>           |buzP83         |   10.715|
+B<4>           |P27            |   12.159|
+B<4>           |P29            |   12.523|
+B<4>           |P32            |   13.308|
+B<4>           |P34            |   12.921|
+B<4>           |P35            |   12.631|
+B<4>           |P40            |   13.480|
+B<4>           |P41            |   12.850|
+B<4>           |buzP83         |   10.883|
+B<5>           |P27            |   12.306|
+B<5>           |P29            |   12.670|
+B<5>           |P32            |   13.455|
+B<5>           |P34            |   13.068|
+B<5>           |P35            |   12.778|
+B<5>           |P40            |   13.627|
+B<5>           |P41            |   12.997|
+B<5>           |buzP83         |   11.030|
+B<6>           |P27            |   11.849|
+B<6>           |P29            |   12.213|
+B<6>           |P32            |   12.998|
+B<6>           |P34            |   12.611|
+B<6>           |P35            |   12.321|
+B<6>           |P40            |   13.170|
+B<6>           |P41            |   12.540|
+B<6>           |buzP83         |   10.573|
+B<7>           |P27            |   11.902|
+B<7>           |P29            |   12.266|
+B<7>           |P32            |   13.051|
+B<7>           |P34            |   12.664|
+B<7>           |P35            |   12.374|
+B<7>           |P40            |   13.223|
+B<7>           |P41            |   12.593|
+B<7>           |buzP83         |   10.626|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 29 15:08:18 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4583 MB
+
+
+

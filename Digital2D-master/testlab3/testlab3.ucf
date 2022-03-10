@@ -1,0 +1,13 @@
+
+# PlanAhead Generated physical constraints 
+
+
+NET "n1" LOC = P82;
+NET "n2" LOC = P81;
+NET "n3" LOC = P80;
+NET "n4" LOC = P79;
+NET "n5" LOC = P78;
+NET "n6" LOC = P75;
+NET "n7" LOC = P74;
+NET "n8" LOC = P67;
+NET "osc" LOC = P123;

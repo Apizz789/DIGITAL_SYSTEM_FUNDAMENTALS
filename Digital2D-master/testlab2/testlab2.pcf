@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 29 14:20:24 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "XLXN_10" LOCATE = SITE "P62" LEVEL 1;
+COMP "XLXN_11" LOCATE = SITE "P61" LEVEL 1;
+COMP "XLXN_12" LOCATE = SITE "P59" LEVEL 1;
+COMP "XLXN_13" LOCATE = SITE "P82" LEVEL 1;
+COMP "XLXN_14" LOCATE = SITE "P81" LEVEL 1;
+COMP "XLXN_15" LOCATE = SITE "P80" LEVEL 1;
+COMP "XLXN_16" LOCATE = SITE "P79" LEVEL 1;
+COMP "XLXN_5" LOCATE = SITE "P58" LEVEL 1;
+COMP "XLXN_6" LOCATE = SITE "P57" LEVEL 1;
+COMP "XLXN_7" LOCATE = SITE "P56" LEVEL 1;
+COMP "XLXN_8" LOCATE = SITE "P55" LEVEL 1;
+COMP "XLXN_9" LOCATE = SITE "P66" LEVEL 1;
+SCHEMATIC END;
+

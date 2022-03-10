@@ -1,0 +1,197 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf
+
+Design file:              lab9.ncd
+Physical constraint file: lab9.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock swP47 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LEDP79      |         9.595(R)|      SLOW  |         5.478(R)|      FAST  |swP47_IBUF        |   0.000|
+LEDP80      |         9.660(R)|      SLOW  |         5.449(R)|      FAST  |swP47_IBUF        |   0.000|
+LEDP81      |         9.742(R)|      SLOW  |         5.537(R)|      FAST  |swP47_IBUF        |   0.000|
+LEDP82      |         9.963(R)|      SLOW  |         5.683(R)|      FAST  |swP47_IBUF        |   0.000|
+aP41        |        14.335(R)|      SLOW  |         7.493(R)|      FAST  |swP47_IBUF        |   0.000|
+bP40        |        14.454(R)|      SLOW  |         7.419(R)|      FAST  |swP47_IBUF        |   0.000|
+cP35        |        14.476(R)|      SLOW  |         7.338(R)|      FAST  |swP47_IBUF        |   0.000|
+dP34        |        14.255(R)|      SLOW  |         7.507(R)|      FAST  |swP47_IBUF        |   0.000|
+eP32        |        14.168(R)|      SLOW  |         7.178(R)|      FAST  |swP47_IBUF        |   0.000|
+fP29        |        13.209(R)|      SLOW  |         6.825(R)|      FAST  |swP47_IBUF        |   0.000|
+gP27        |        13.163(R)|      SLOW  |         6.703(R)|      FAST  |swP47_IBUF        |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock oscP123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+oscP123        |    0.896|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock swP47
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+swP47          |    2.778|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |aP41           |   13.537|
+A<0>           |bP40           |   13.656|
+A<0>           |cP35           |   13.678|
+A<0>           |dP34           |   13.457|
+A<0>           |eP32           |   13.370|
+A<0>           |fP29           |   12.411|
+A<0>           |gP27           |   12.415|
+A<1>           |aP41           |   13.359|
+A<1>           |bP40           |   13.478|
+A<1>           |cP35           |   13.500|
+A<1>           |dP34           |   13.279|
+A<1>           |eP32           |   13.192|
+A<1>           |fP29           |   12.233|
+A<1>           |gP27           |   12.237|
+A<2>           |aP41           |   12.974|
+A<2>           |bP40           |   13.093|
+A<2>           |cP35           |   13.115|
+A<2>           |dP34           |   12.894|
+A<2>           |eP32           |   12.807|
+A<2>           |fP29           |   11.848|
+A<2>           |gP27           |   11.852|
+A<3>           |aP41           |   13.126|
+A<3>           |bP40           |   13.245|
+A<3>           |cP35           |   13.267|
+A<3>           |dP34           |   13.046|
+A<3>           |eP32           |   12.959|
+A<3>           |fP29           |   12.000|
+A<3>           |gP27           |   12.004|
+A<4>           |aP41           |   13.461|
+A<4>           |bP40           |   13.580|
+A<4>           |cP35           |   13.602|
+A<4>           |dP34           |   13.381|
+A<4>           |eP32           |   13.294|
+A<4>           |fP29           |   12.351|
+A<4>           |gP27           |   12.468|
+A<5>           |aP41           |   12.568|
+A<5>           |bP40           |   12.687|
+A<5>           |cP35           |   12.709|
+A<5>           |dP34           |   12.488|
+A<5>           |eP32           |   12.401|
+A<5>           |fP29           |   11.948|
+A<5>           |gP27           |   11.561|
+A<6>           |aP41           |   12.768|
+A<6>           |bP40           |   12.697|
+A<6>           |cP35           |   12.533|
+A<6>           |dP34           |   12.765|
+A<6>           |eP32           |   12.276|
+A<6>           |fP29           |   11.894|
+A<6>           |gP27           |   11.907|
+A<7>           |aP41           |   12.370|
+A<7>           |bP40           |   12.354|
+A<7>           |cP35           |   12.340|
+A<7>           |dP34           |   12.314|
+A<7>           |eP32           |   12.052|
+A<7>           |fP29           |   11.791|
+A<7>           |gP27           |   11.387|
+B1<0>          |aP41           |   13.300|
+B1<0>          |bP40           |   13.586|
+B1<0>          |cP35           |   13.476|
+B1<0>          |dP34           |   13.331|
+B1<0>          |eP32           |   13.129|
+B1<0>          |fP29           |   12.496|
+B1<0>          |gP27           |   12.174|
+B1<1>          |aP41           |   13.498|
+B1<1>          |bP40           |   13.617|
+B1<1>          |cP35           |   13.639|
+B1<1>          |dP34           |   13.418|
+B1<1>          |eP32           |   13.331|
+B1<1>          |fP29           |   12.406|
+B1<1>          |gP27           |   12.376|
+B1<2>          |aP41           |   13.360|
+B1<2>          |bP40           |   13.479|
+B1<2>          |cP35           |   13.501|
+B1<2>          |dP34           |   13.280|
+B1<2>          |eP32           |   13.193|
+B1<2>          |fP29           |   12.273|
+B1<2>          |gP27           |   12.238|
+B1<3>          |aP41           |   13.756|
+B1<3>          |bP40           |   13.875|
+B1<3>          |cP35           |   13.897|
+B1<3>          |dP34           |   13.676|
+B1<3>          |eP32           |   13.589|
+B1<3>          |fP29           |   12.630|
+B1<3>          |gP27           |   12.634|
+B1<4>          |aP41           |   13.775|
+B1<4>          |bP40           |   13.894|
+B1<4>          |cP35           |   13.916|
+B1<4>          |dP34           |   13.695|
+B1<4>          |eP32           |   13.608|
+B1<4>          |fP29           |   12.778|
+B1<4>          |gP27           |   12.782|
+B1<5>          |aP41           |   13.712|
+B1<5>          |bP40           |   13.831|
+B1<5>          |cP35           |   13.853|
+B1<5>          |dP34           |   13.632|
+B1<5>          |eP32           |   13.545|
+B1<5>          |fP29           |   12.654|
+B1<5>          |gP27           |   12.771|
+B1<6>          |aP41           |   13.539|
+B1<6>          |bP40           |   13.468|
+B1<6>          |cP35           |   13.304|
+B1<6>          |dP34           |   13.536|
+B1<6>          |eP32           |   13.047|
+B1<6>          |fP29           |   12.715|
+B1<6>          |gP27           |   12.678|
+B1<7>          |aP41           |   13.225|
+B1<7>          |bP40           |   13.209|
+B1<7>          |cP35           |   13.195|
+B1<7>          |dP34           |   13.169|
+B1<7>          |eP32           |   12.907|
+B1<7>          |fP29           |   12.646|
+B1<7>          |gP27           |   12.242|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 05 13:33:34 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4583 MB
+
+
+

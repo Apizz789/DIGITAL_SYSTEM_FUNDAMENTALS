@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl decode32to8_drc.vhf -w D:/XilinxNotVM/Project/lab9/decode32to8.sch 
+sch2sym -intstyle ise -family spartan6 -refsym decode32to8 D:/XilinxNotVM/Project/lab9/decode32to8.sch D:/XilinxNotVM/Project/lab9/decode32to8.sym 

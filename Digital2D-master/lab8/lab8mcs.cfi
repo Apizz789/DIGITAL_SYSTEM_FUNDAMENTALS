@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            11/06/2018 - 19:03
+SOURCE          D:\XilinxNotVM\Project\lab8\lab8mcs.mcs
+DEVICE          1024K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x0AC82288
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "D:/XilinxNotVM/Project/lab8/lab8.bit" 6slx9tqg144

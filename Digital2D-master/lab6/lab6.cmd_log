@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/dunkdink/Desktop/Digital2D-master/lab6/lab6.xst" -ofn "C:/Users/dunkdink/Desktop/Digital2D-master/lab6/lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab6.ucf -p xc6slx9-tqg144-3 lab6.ngc lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab6_map.ncd lab6.ngd lab6.pcf 
+par -w -intstyle ise -ol high -mt off lab6_map.ncd lab6.ncd lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab6.twx lab6.ncd -o lab6.twr lab6.pcf -ucf lab6.ucf 
+bitgen -intstyle ise -f lab6.ut lab6.ncd 

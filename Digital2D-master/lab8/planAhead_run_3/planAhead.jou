@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Nov 06 17:51:44 2018
+# Process ID: 5952
+# Log file: D:/XilinxNotVM/Project/lab8/planAhead_run_3/planAhead.log
+# Journal file: D:/XilinxNotVM/Project/lab8/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/XilinxNotVM/Project/lab8/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P112 [get_ports {B[7]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {B[5]}]
+endgroup
+set_property package_pin "" [get_ports [list  {B[6]}]]
+startgroup
+set_property package_pin P105 [get_ports {B[5]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {B[6]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {B[4]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {B[3]}]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports {B[2]}]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports {B[1]}]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports {B[0]}]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports oscP123]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports com0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports com1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports com2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports com3]
+endgroup
+save_constraints

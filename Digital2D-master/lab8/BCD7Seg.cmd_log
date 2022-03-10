@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -refsym BCD7Seg D:/XilinxNotVM/Project/lab8/BCD7Seg.sch D:/XilinxNotVM/Project/lab8/BCD7Seg.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl BCD7Seg_drc.vhf -w D:/XilinxNotVM/Project/lab8/BCD7Seg.sch 
+sch2sym -intstyle ise -family spartan6 -refsym BCD7Seg D:/XilinxNotVM/Project/lab8/BCD7Seg.sch D:/XilinxNotVM/Project/lab8/BCD7Seg.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCD7Seg D:/XilinxNotVM/Project/lab8/BCD7Seg.sch D:/XilinxNotVM/Project/lab8/BCD7Seg.sym 

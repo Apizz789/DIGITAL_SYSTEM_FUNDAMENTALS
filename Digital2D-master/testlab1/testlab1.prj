@@ -1,0 +1,4 @@
+vhdl work "mod4.vhf"
+vhdl work "decode2to4.vhf"
+vhdl work "BCD16bit.vhf"
+vhdl work "testlab1.vhf"

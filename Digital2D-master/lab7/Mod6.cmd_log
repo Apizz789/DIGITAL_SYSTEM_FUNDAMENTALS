@@ -1,0 +1,17 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Mod6_drc.vhf -w D:/XilinxNotVM/Project/lab7/Mod6.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mod6 D:/XilinxNotVM/Project/lab7/Mod6.sch D:/XilinxNotVM/Project/lab7/Mod6.sym 

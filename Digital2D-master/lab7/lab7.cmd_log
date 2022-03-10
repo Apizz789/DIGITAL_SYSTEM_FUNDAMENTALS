@@ -1,0 +1,236 @@
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab7/lab7.xst" -ofn "D:/XilinxNotVM/Project/lab7/lab7.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab7.ucf -p xc6slx9-tqg144-3 lab7.ngc lab7.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab7_map.ncd lab7.ngd lab7.pcf 
+par -w -intstyle ise -ol high -mt off lab7_map.ncd lab7.ncd lab7.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab7.twx lab7.ncd -o lab7.twr lab7.pcf -ucf lab7.ucf 
+bitgen -intstyle ise -f lab7.ut lab7.ncd 

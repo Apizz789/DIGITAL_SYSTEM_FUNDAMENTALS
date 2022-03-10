@@ -1,0 +1,21 @@
+
+
+NET "XLXN_6" LOC = P41;
+NET "XLXN_7" LOC = P40;
+NET "XLXN_8" LOC = P35;
+NET "XLXN_9" LOC = P34;
+NET "XLXN_10" LOC = P32;
+NET "XLXN_11" LOC = P29;
+NET "XLXN_12" LOC = P27;
+NET "com0" LOC = P44;
+NET "com1" LOC = P43;
+NET "com2" LOC = P33;
+NET "com3" LOC = P30;
+NET "PB1P45" LOC = P45;
+NET "reset" LOC = P46;
+NET "ledP82" LOC = P82;
+
+# PlanAhead Generated physical constraints 
+
+NET "dotP26" LOC = P26;
+NET "oscP123" LOC = P123;

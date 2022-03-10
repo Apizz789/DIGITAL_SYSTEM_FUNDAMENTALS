@@ -1,0 +1,15 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "osc" LOC = P123;
+NET "com0" LOC = P44;
+NET "com1" LOC = P43;
+NET "com2" LOC = P33;
+NET "com3" LOC = P30;
+NET "XLXN_1" LOC = P41;
+NET "XLXN_2" LOC = P40;
+NET "XLXN_3" LOC = P35;
+NET "XLXN_4" LOC = P34;
+NET "XLXN_5" LOC = P32;
+NET "XLXN_6" LOC = P29;
+NET "XLXN_7" LOC = P27;

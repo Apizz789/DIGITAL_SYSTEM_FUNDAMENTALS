@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym KRxor8 D:/XilinxNotVM/Project/lab9/KRxor8.sch D:/XilinxNotVM/Project/lab9/KRxor8.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl KRxor8_drc.vhf -w D:/XilinxNotVM/Project/lab9/KRxor8.sch 

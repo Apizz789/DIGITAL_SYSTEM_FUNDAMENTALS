@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 08 16:04:04 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ASW3P59" LOCATE = SITE "P59" LEVEL 1;
+COMP "CSW1P62" LOCATE = SITE "P62" LEVEL 1;
+COMP "aP41" LOCATE = SITE "P41" LEVEL 1;
+COMP "bP40" LOCATE = SITE "P40" LEVEL 1;
+COMP "cP35" LOCATE = SITE "P35" LEVEL 1;
+COMP "BSW2P61" LOCATE = SITE "P61" LEVEL 1;
+COMP "dP34" LOCATE = SITE "P34" LEVEL 1;
+COMP "eP32" LOCATE = SITE "P32" LEVEL 1;
+COMP "DSW0P66" LOCATE = SITE "P66" LEVEL 1;
+COMP "fP29" LOCATE = SITE "P29" LEVEL 1;
+COMP "gP27" LOCATE = SITE "P27" LEVEL 1;
+SCHEMATIC END;
+

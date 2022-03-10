@@ -1,0 +1,64 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LAB_0.vf
+// /___/   /\     Timestamp : 09/17/2020 15:35:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "P:/ISE Project/PROJECT/LAB_0.vf" -w "P:/ISE Project/PROJECT/LAB_0.sch"
+//Design Name: LAB_0
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module LAB_0(B, 
+             D, 
+             E, 
+             H, 
+             S, 
+             OUTPUT);
+
+    input B;
+    input D;
+    input E;
+    input H;
+    input S;
+   output OUTPUT;
+   
+   wire XLXN_23;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   
+   OR4B4  XLXI_17 (.I0(XLXN_48), 
+                  .I1(XLXN_47), 
+                  .I2(XLXN_46), 
+                  .I3(XLXN_45), 
+                  .O(OUTPUT));
+   AND2  XLXI_18 (.I0(E), 
+                 .I1(XLXN_23), 
+                 .O(XLXN_48));
+   INV  XLXI_19 (.I(D), 
+                .O(XLXN_23));
+   AND3B1  XLXI_20 (.I0(B), 
+                   .I1(S), 
+                   .I2(E), 
+                   .O(XLXN_47));
+   AND2B1  XLXI_21 (.I0(E), 
+                   .I1(H), 
+                   .O(XLXN_46));
+   AND3B1  XLXI_23 (.I0(S), 
+                   .I1(B), 
+                   .I2(D), 
+                   .O(XLXN_45));
+endmodule

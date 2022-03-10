@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl mod4_drc.vhf -w D:/XilinxNotVM/Project/lab7/mod4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod4 D:/XilinxNotVM/Project/lab7/mod4.sch D:/XilinxNotVM/Project/lab7/mod4.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl mod4_drc.vhf -w D:/XilinxNotVM/Project/lab7/mod4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod4 D:/XilinxNotVM/Project/lab7/mod4.sch D:/XilinxNotVM/Project/lab7/mod4.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl mod4_drc.vhf -w D:/XilinxNotVM/Project/lab7/mod4.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod4 D:/XilinxNotVM/Project/lab7/mod4.sch D:/XilinxNotVM/Project/lab7/mod4.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl mod4.vhf -w D:/XilinxNotVM/Project/lab7/mod4.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl mod4_drc.vhf -w D:/XilinxNotVM/Project/lab7/mod4.sch 

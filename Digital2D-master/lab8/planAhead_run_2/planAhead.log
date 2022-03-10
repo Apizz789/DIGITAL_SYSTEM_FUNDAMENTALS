@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Nov 06 16:05:03 2018
+# Process ID: 18872
+# Log file: D:/XilinxNotVM/Project/lab8/planAhead_run_2/planAhead.log
+# Journal file: D:/XilinxNotVM/Project/lab8/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/XilinxNotVM/Project/lab8/pa.fromHdl.tcl
+# create_project -name lab8 -dir "D:/XilinxNotVM/Project/lab8/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab8.ucf" [current_fileset -constrset]
+Adding file 'D:/XilinxNotVM/Project/lab8/lab8.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {BCD16bit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lab8.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top lab8 $srcset
+# add_files [list {lab8.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/Project/lab8/BCD16bit.vhf" into library work
+Parsing VHDL file "D:/XilinxNotVM/Project/lab8/lab8.vhf" into library work
+Loading clock regions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/XilinxNotVM/Project/lab8/lab8.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'S[7]' [D:/XilinxNotVM/Project/lab8/lab8.ucf:12]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'S[6]' [D:/XilinxNotVM/Project/lab8/lab8.ucf:13]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'S[5]' [D:/XilinxNotVM/Project/lab8/lab8.ucf:14]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'S[4]' [D:/XilinxNotVM/Project/lab8/lab8.ucf:15]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_4/BUS_0001_GND_8_o_add_1' at site P79, Unknown instance type 'RTL_add_9u_9u' [D:/XilinxNotVM/Project/lab8/lab8.ucf:16]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_4/BUS_0001_GND_8_o_add_1' at site P80, Unknown instance type 'RTL_add_9u_9u' [D:/XilinxNotVM/Project/lab8/lab8.ucf:17]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_4/BUS_0001_GND_8_o_add_1' at site P81, Unknown instance type 'RTL_add_9u_9u' [D:/XilinxNotVM/Project/lab8/lab8.ucf:18]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc instance 'XLXI_4/BUS_0001_GND_8_o_add_1' at site P82, Unknown instance type 'RTL_add_9u_9u' [D:/XilinxNotVM/Project/lab8/lab8.ucf:19]
+Finished Parsing UCF File [D:/XilinxNotVM/Project/lab8/lab8.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8315dc2b
+open_rtl_design: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 547.848 ; gain = 91.566
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P27 [get_ports P27]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports P29]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports P32]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports P34]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports P35]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports P40]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports P41]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/XilinxNotVM/Project/lab8\planAhead_pid18872.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Nov 06 17:51:50 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

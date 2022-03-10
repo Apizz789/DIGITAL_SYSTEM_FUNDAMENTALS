@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl XOR8_drc.vhf -w D:/XilinxNotVM/Project/lab9/XOR8.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl XOR8_drc.vhf -w D:/XilinxNotVM/Project/lab9/XOR8.sch 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl XOR8_drc.vhf -w D:/XilinxNotVM/Project/lab9/XOR8.sch 
+sch2sym -intstyle ise -family spartan6 -refsym XOR8 D:/XilinxNotVM/Project/lab9/XOR8.sch D:/XilinxNotVM/Project/lab9/XOR8.sym 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl XOR8_drc.vhf -w D:/XilinxNotVM/Project/lab9/XOR8.sch 

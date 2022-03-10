@@ -1,0 +1,36 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "A[0]" LOC = P66;
+NET "A[1]" LOC = P62;
+NET "A[2]" LOC = P61;
+NET "A[3]" LOC = P59;
+NET "A[4]" LOC = P58;
+NET "A[5]" LOC = P57;
+NET "A[6]" LOC = P56;
+NET "A[7]" LOC = P55;
+NET "B1[0]" LOC = P99;
+NET "B1[1]" LOC = P100;
+NET "B1[2]" LOC = P101;
+NET "B1[3]" LOC = P102;
+NET "B1[4]" LOC = P104;
+NET "B1[5]" LOC = P105;
+NET "B1[6]" LOC = P111;
+NET "B1[7]" LOC = P112;
+NET "aP41" LOC = P41;
+NET "bP40" LOC = P40;
+NET "com0" LOC = P44;
+NET "com1" LOC = P43;
+NET "com2" LOC = P33;
+NET "com3" LOC = P30;
+NET "cP35" LOC = P35;
+NET "dP34" LOC = P34;
+NET "eP32" LOC = P32;
+NET "fP29" LOC = P29;
+NET "gP27" LOC = P27;
+NET "oscP123" LOC = P123;
+NET "swP47" LOC = P45;
+NET "LEDP82" LOC = P82;
+NET "LEDP81" LOC = P81;
+NET "LEDP80" LOC = P80;
+NET "LEDP79" LOC = P79;

@@ -1,0 +1,441 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: testlab1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testlab1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testlab1"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : testlab1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\XilinxNotVM\Project\testlab1\mod4.vhf" into library work
+Parsing entity <FJKC_HXILINX_mod4>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_mod4>.
+Parsing entity <mod4>.
+Parsing architecture <BEHAVIORAL> of entity <mod4>.
+Parsing VHDL file "D:\XilinxNotVM\Project\testlab1\decode2to4.vhf" into library work
+Parsing entity <decode2to4>.
+Parsing architecture <BEHAVIORAL> of entity <decode2to4>.
+Parsing VHDL file "D:\XilinxNotVM\Project\testlab1\BCD16bit.vhf" into library work
+Parsing entity <BCD16bit>.
+Parsing architecture <BEHAVIORAL> of entity <bcd16bit>.
+Parsing VHDL file "D:\XilinxNotVM\Project\testlab1\testlab1.vhf" into library work
+Parsing entity <M4_1E_HXILINX_testlab1>.
+Parsing architecture <M4_1E_HXILINX_testlab1_V> of entity <m4_1e_hxilinx_testlab1>.
+Parsing entity <FJKC_HXILINX_testlab1>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_testlab1>.
+Parsing entity <mod4_MUSER_testlab1>.
+Parsing architecture <BEHAVIORAL> of entity <mod4_muser_testlab1>.
+Parsing entity <decode2to4_MUSER_testlab1>.
+Parsing architecture <BEHAVIORAL> of entity <decode2to4_muser_testlab1>.
+Parsing entity <BCD16bit_MUSER_testlab1>.
+Parsing architecture <BEHAVIORAL> of entity <bcd16bit_muser_testlab1>.
+Parsing entity <testlab1>.
+Parsing architecture <BEHAVIORAL> of entity <testlab1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <testlab1> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <BCD16bit_MUSER_testlab1> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M4_1E_HXILINX_testlab1> (architecture <M4_1E_HXILINX_testlab1_V>) from library <work>.
+INFO:HDLCompiler:679 - "D:\XilinxNotVM\Project\testlab1\testlab1.vhf" Line 55. Case statement is complete. others clause is never selected
+
+Elaborating entity <decode2to4_MUSER_testlab1> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <mod4_MUSER_testlab1> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <FJKC_HXILINX_testlab1> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <testlab1>.
+    Related source file is "D:\XilinxNotVM\Project\testlab1\testlab1.vhf".
+    Set property "HU_SET = XLXI_3_5" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_3" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_4" for instance <XLXI_5>.
+    Summary:
+	no macro.
+Unit <testlab1> synthesized.
+
+Synthesizing Unit <BCD16bit_MUSER_testlab1>.
+    Related source file is "D:\XilinxNotVM\Project\testlab1\testlab1.vhf".
+    Summary:
+	no macro.
+Unit <BCD16bit_MUSER_testlab1> synthesized.
+
+Synthesizing Unit <M4_1E_HXILINX_testlab1>.
+    Related source file is "D:\XilinxNotVM\Project\testlab1\testlab1.vhf".
+    Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 50.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M4_1E_HXILINX_testlab1> synthesized.
+
+Synthesizing Unit <decode2to4_MUSER_testlab1>.
+    Related source file is "D:\XilinxNotVM\Project\testlab1\testlab1.vhf".
+    Summary:
+	no macro.
+Unit <decode2to4_MUSER_testlab1> synthesized.
+
+Synthesizing Unit <mod4_MUSER_testlab1>.
+    Related source file is "D:\XilinxNotVM\Project\testlab1\testlab1.vhf".
+    Set property "HU_SET = XLXI_1_0" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_1" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_2" for instance <XLXI_3>.
+    Summary:
+	no macro.
+Unit <mod4_MUSER_testlab1> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_testlab1>.
+    Related source file is "D:\XilinxNotVM\Project\testlab1\testlab1.vhf".
+        INIT = '0'
+    Found 1-bit register for signal <q_tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_testlab1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ 1-bit register                                        : 3
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 9
+ 1-bit 4-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 9
+ 1-bit 4-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <testlab1> ...
+
+Optimizing unit <BCD16bit_MUSER_testlab1> ...
+
+Optimizing unit <FJKC_HXILINX_testlab1> ...
+
+Optimizing unit <M4_1E_HXILINX_testlab1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block testlab1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : testlab1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 71
+#      AND2                        : 28
+#      AND3                        : 2
+#      AND3B2                      : 1
+#      GND                         : 1
+#      INV                         : 12
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      OR2                         : 12
+#      OR3                         : 5
+#      OR4                         : 1
+#      VCC                         : 1
+#      XNOR2                       : 1
+#      XOR2                        : 2
+# FlipFlops/Latches                : 3
+#      FDC                         : 2
+#      FDCE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               3  out of  11440     0%  
+ Number of Slice LUTs:                   17  out of   5720     0%  
+    Number used as Logic:                17  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     20
+   Number with an unused Flip Flop:      17  out of     20    85%  
+   Number with an unused LUT:             3  out of     20    15%  
+   Number of fully used LUT-FF pairs:     0  out of     20     0%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    102    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+osc                                | BUFGP                  | 3     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.028ns (Maximum Frequency: 330.284MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 10.969ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'osc'
+  Clock period: 3.028ns (frequency: 330.284MHz)
+  Total number of paths / destination ports: 20 / 7
+-------------------------------------------------------------------------
+Delay:               3.028ns (Levels of Logic = 2)
+  Source:            XLXI_16/XLXI_1/q_tmp (FF)
+  Destination:       XLXI_16/XLXI_3/q_tmp (FF)
+  Source Clock:      osc rising
+  Destination Clock: osc rising
+
+  Data Path: XLXI_16/XLXI_1/q_tmp to XLXI_16/XLXI_3/q_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.447   1.277  q_tmp (q_tmp)
+     end scope: 'XLXI_16/XLXI_1:Q'
+     AND3B2:I1->O          3   0.223   0.650  XLXI_16/XLXI_8 (XLXI_16/XLXN_22)
+     begin scope: 'XLXI_16/XLXI_3:CLR'
+     FDC:CLR                   0.430          q_tmp
+    ----------------------------------------
+    Total                      3.028ns (1.100ns logic, 1.928ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'osc'
+  Total number of paths / destination ports: 90 / 11
+-------------------------------------------------------------------------
+Offset:              10.969ns (Levels of Logic = 9)
+  Source:            XLXI_16/XLXI_1/q_tmp (FF)
+  Destination:       XLXN_1 (PAD)
+  Source Clock:      osc rising
+
+  Data Path: XLXI_16/XLXI_1/q_tmp to XLXN_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.447   0.933  q_tmp (q_tmp)
+     end scope: 'XLXI_16/XLXI_1:Q'
+     begin scope: 'XLXI_5:S0'
+     LUT2:I1->O            9   0.205   0.829  Mmux_O11 (O)
+     end scope: 'XLXI_5:O'
+     INV:I->O              9   0.568   1.174  XLXI_1/XLXI_2 (XLXI_1/notB)
+     AND2:I1->O            1   0.223   0.924  XLXI_1/XLXI_9 (XLXI_1/XLXN_305)
+     OR2:I1->O             1   0.223   0.944  XLXI_1/XLXI_10 (XLXI_1/XLXN_304)
+     AND2:I0->O            1   0.203   0.924  XLXI_1/XLXI_8 (XLXI_1/XLXN_306)
+     OR4:I1->O             1   0.223   0.579  XLXI_1/XLXI_13 (XLXN_1_OBUF)
+     OBUF:I->O                 2.571          XLXN_1_OBUF (XLXN_1)
+    ----------------------------------------
+    Total                     10.969ns (4.663ns logic, 6.306ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock osc
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+osc            |    3.028|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.28 secs
+ 
+--> 
+
+Total memory usage is 4539272 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

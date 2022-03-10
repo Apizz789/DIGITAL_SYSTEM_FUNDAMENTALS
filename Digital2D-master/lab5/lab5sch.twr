@@ -1,0 +1,77 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab5sch.twx lab5sch.ncd -o lab5sch.twr lab5sch.pcf -ucf
+lab5sch.ucf
+
+Design file:              lab5sch.ncd
+Physical constraint file: lab5sch.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ASW3P59        |aP41           |    7.483|
+ASW3P59        |dP34           |    7.807|
+ASW3P59        |fP29           |    8.421|
+ASW3P59        |gP27           |    8.641|
+BSW2P61        |aP41           |    7.769|
+BSW2P61        |bP40           |    7.600|
+BSW2P61        |cP35           |    7.313|
+BSW2P61        |dP34           |    7.505|
+BSW2P61        |eP32           |    7.262|
+BSW2P61        |fP29           |    8.365|
+BSW2P61        |gP27           |    8.260|
+CSW1P62        |aP41           |    7.995|
+CSW1P62        |bP40           |    8.426|
+CSW1P62        |cP35           |    8.079|
+CSW1P62        |dP34           |    7.978|
+CSW1P62        |eP32           |    7.866|
+CSW1P62        |fP29           |    8.832|
+CSW1P62        |gP27           |    9.189|
+DSW0P66        |aP41           |    7.367|
+DSW0P66        |bP40           |    7.416|
+DSW0P66        |cP35           |    7.340|
+DSW0P66        |dP34           |    7.580|
+DSW0P66        |eP32           |    7.032|
+DSW0P66        |fP29           |    8.181|
+DSW0P66        |gP27           |    8.173|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Oct 08 16:04:13 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4560 MB
+
+
+

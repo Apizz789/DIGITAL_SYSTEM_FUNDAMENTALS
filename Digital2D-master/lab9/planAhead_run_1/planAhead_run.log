@@ -1,0 +1,147 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/XilinxNotVM/Project/lab9/pa.fromHdl.tcl
+# create_project -name lab9 -dir "D:/XilinxNotVM/Project/lab9/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "lab9.ucf" [current_fileset -constrset]
+Adding file 'D:/XilinxNotVM/Project/lab9/lab9.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {mod4.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {KRxor8.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {decode32to8.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BCD16bit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lab9.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top lab9 $srcset
+# add_files [list {lab9.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/Project/lab9/lab9.vhf" into library work
+Loading clock regions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/XilinxNotVM/Project/lab9/lab9.ucf]
+Finished Parsing UCF File [D:/XilinxNotVM/Project/lab9/lab9.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: c24799f0
+open_rtl_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 549.141 ; gain = 100.816
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P66 [get_ports {A[0]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {A[1]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {A[2]}]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports {A[3]}]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports {A[4]}]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports {A[5]}]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports {A[6]}]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports {A[7]}]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports {B1[0]}]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports {B1[1]}]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports {B1[2]}]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports {B1[3]}]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports {B1[4]}]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports {B1[5]}]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports {B1[6]}]
+endgroup
+startgroup
+set_property package_pin P112 [get_ports {B1[7]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports aP41]
+endgroup
+set_property package_pin "" [get_ports [list  com0]]
+startgroup
+set_property package_pin P40 [get_ports bP40]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports com0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports com1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports com2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports com3]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports cP35]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports dP34]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports eP32]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports fP29]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports gP27]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports oscP123]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports swP45]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Nov 13 21:11:35 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

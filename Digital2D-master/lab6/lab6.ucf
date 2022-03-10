@@ -1,0 +1,24 @@
+
+
+NET "A_P59" LOC = P59;
+NET "aP41" LOC = P41;
+NET "B_P61" LOC = P61;
+NET "bP40" LOC = P40;
+NET "C_P62" LOC = P62;
+NET "cP35" LOC = P35;
+NET "D_P66" LOC = P66;
+NET "dP34" LOC = P34;
+NET "eP32" LOC = P32;
+NET "fP29" LOC = P29;
+NET "gP27" LOC = P27;
+
+
+NET "Buz_P83" LOC = P83;
+NET "common0_P44" LOC = P44;
+NET "common1_P43" LOC = P43;
+NET "common2_P33" LOC = P33;
+NET "inPB1_P45" LOC = P47;
+NET "OS_P123" LOC = P123;
+
+
+NET "common3_P30" LOC = P30;

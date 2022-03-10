@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\XilinxNotVM\Project\testlab1\testlab1.ncd
+OUTFILE=D:\XilinxNotVM\Project\testlab1\testlab1.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\XilinxNotVM\Project\testlab1
+LICENSE=WebPack
+USER_INFO=__0_0_0

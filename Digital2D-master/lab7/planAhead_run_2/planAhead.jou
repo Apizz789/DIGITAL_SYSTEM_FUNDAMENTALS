@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Nov 09 23:39:04 2018
+# Process ID: 4252
+# Log file: D:/XilinxNotVM/Project/lab7/planAhead_run_2/planAhead.log
+# Journal file: D:/XilinxNotVM/Project/lab7/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/XilinxNotVM/Project/lab7/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P26 [get_ports dotP26]
+endgroup
+set_property is_loc_fixed false [get_ports [list  dotP26]]
+set_property is_loc_fixed true [get_ports [list  dotP26]]
+startgroup
+set_property package_pin P123 [get_ports XLXN_166]
+endgroup
+save_constraints

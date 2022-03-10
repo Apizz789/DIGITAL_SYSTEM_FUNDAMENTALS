@@ -1,0 +1,71 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Tue Nov 13 22:05:24 2018
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'D:\XilinxNotVM\Project\lab6\\auto_project.ipf' already exists.
+Original project has been renamed to'D:\XilinxNotVM\Project\lab6\\auto_project_1.ipf'.
+Project: D:\XilinxNotVM\Project\lab6\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port svf -file"D:/XilinxNotVM/Project/lab9/lab9svf.svf"
+// *** BATCH CMD : addDevice -p 1 -file"D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd"
+INFO:iMPACT:501 - '1': Added Device UNKNOWN successfully.
+----------------------------------------------------------------------
+INFO:iMPACT:1777 - 
+   Reading D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd...
+INFO:iMPACT:501 - '1': Added Device XC6SLX9 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT:1777 - 
+   Reading D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9.bsd...
+----------------------------------------------------------------------
+Selected part: M25P80
+// *** BATCH CMD : attachflash -position 1 -spi "M25P80"
+Unprotect sectors: FALSE
+// *** BATCH CMD : assignfiletoattachedflash -position 1 -file"D:/XilinxNotVM/Project/lab9/lab9mcs.mcs"
+INFO:iMPACT - Current time: 13-Nov-18 10:06:14 PM
+// *** BATCH CMD : Program -p 1 -dataWidth 1 -spionly -e -loadfpga 
+
+'1': SPI access core not detected. SPI access core will be downloaded to thedevice to enable operations.
+INFO:iMPACT - Downloading core file   D:/XilinxNotVM/14.7/ISE_DS/ISE/spartan6/data/xc6slx9_spi.cor.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT:2492 - '1': Completed downloading core to device.
+'1': IDCODE is '13' (in hex).
+'1': ID Check passed.
+'1': IDCODE is '13' (in hex).
+'1': ID Check passed.
+'1': Erasing Device.
+'1': Using Sector Erase.
+'1': Programming Flash.
+'1':Programming in x1 mode.
+'1': Programmed successfully.
+INFO:iMPACT - '1': Flash was programmed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+Project: 'D:\XilinxNotVM\Project\lab6\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"D:\XilinxNotVM\Project\lab6\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   D:\XilinxNotVM\Project\lab6\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

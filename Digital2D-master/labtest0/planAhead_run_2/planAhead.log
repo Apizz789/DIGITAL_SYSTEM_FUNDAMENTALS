@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Nov 29 13:23:12 2018
+# Process ID: 3944
+# Log file: D:/XilinxNotVM/Project/labtest0/planAhead_run_2/planAhead.log
+# Journal file: D:/XilinxNotVM/Project/labtest0/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/XilinxNotVM/Project/labtest0/pa.fromHdl.tcl
+# create_project -name labtest0 -dir "D:/XilinxNotVM/Project/labtest0/planAhead_run_2" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "labtest0.ucf" [current_fileset -constrset]
+Adding file 'D:/XilinxNotVM/Project/labtest0/labtest0.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {labtest0.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top labtest0 $srcset
+# add_files [list {labtest0.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/Project/labtest0/labtest0.vhf" into library work
+Loading clock regions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/XilinxNotVM/Project/labtest0/labtest0.ucf]
+Finished Parsing UCF File [D:/XilinxNotVM/Project/labtest0/labtest0.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: a558f22c
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 554.945 ; gain = 115.988
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  XLXN_2]]
+set_property package_pin "" [get_ports [list  XLXN_1]]
+set_property package_pin "" [get_ports [list  XLXN_2]]
+startgroup
+set_property package_pin P66 [get_ports XLXN_1]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports XLXN_2]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports XLXN_3]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports XLXN_4]
+endgroup
+startgroup
+set_property package_pin P58 [get_ports XLXN_5]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports XLXN_6]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports XLXN_7]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports XLXN_43]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_11]]
+set_property package_pin "" [get_ports [list  XLXN_12]]
+set_property package_pin "" [get_ports [list  XLXN_11]]
+set_property package_pin "" [get_ports [list  XLXN_15]]
+startgroup
+set_property package_pin P82 [get_ports XLXN_11]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports XLXN_12]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports XLXN_15]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports XLXN_16]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports XLXN_17]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports XLXN_18]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports XLXN_19]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_38]]
+set_property package_pin "" [get_ports [list  XLXN_36]]
+startgroup
+set_property package_pin P67 [get_ports XLXN_38]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports XLXN_26]
+endgroup
+startgroup
+set_property package_pin P94 [get_ports XLXN_31]
+endgroup
+startgroup
+set_property package_pin P93 [get_ports XLXN_32]
+endgroup
+startgroup
+set_property package_pin P92 [get_ports XLXN_33]
+endgroup
+startgroup
+set_property package_pin P88 [get_ports XLXN_34]
+endgroup
+startgroup
+set_property package_pin P87 [get_ports XLXN_35]
+endgroup
+startgroup
+set_property package_pin P85 [get_ports XLXN_36]
+endgroup
+startgroup
+set_property package_pin P84 [get_ports XLXN_39]
+endgroup
+save_constraints

@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl BCD16bit_drc.vhf -w D:/XilinxNotVM/Project/testlab1/BCD16bit.sch 
+sch2sym -intstyle ise -family spartan6 -refsym BCD16bit D:/XilinxNotVM/Project/testlab1/BCD16bit.sch D:/XilinxNotVM/Project/testlab1/BCD16bit.sym 

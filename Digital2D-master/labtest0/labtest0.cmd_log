@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/labtest0/labtest0.xst" -ofn "D:/XilinxNotVM/Project/labtest0/labtest0.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/labtest0/labtest0.xst" -ofn "D:/XilinxNotVM/Project/labtest0/labtest0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc labtest0.ucf -p xc6slx9-tqg144-3 labtest0.ngc labtest0.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o labtest0_map.ncd labtest0.ngd labtest0.pcf 
+par -w -intstyle ise -ol high -mt off labtest0_map.ncd labtest0.ncd labtest0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml labtest0.twx labtest0.ncd -o labtest0.twr labtest0.pcf -ucf labtest0.ucf 
+bitgen -intstyle ise -f labtest0.ut labtest0.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/labtest0/labtest0.xst" -ofn "D:/XilinxNotVM/Project/labtest0/labtest0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc labtest0.ucf -p xc6slx9-tqg144-3 labtest0.ngc labtest0.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o labtest0_map.ncd labtest0.ngd labtest0.pcf 
+par -w -intstyle ise -ol high -mt off labtest0_map.ncd labtest0.ncd labtest0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml labtest0.twx labtest0.ncd -o labtest0.twr labtest0.pcf -ucf labtest0.ucf 
+bitgen -intstyle ise -f labtest0.ut labtest0.ncd 

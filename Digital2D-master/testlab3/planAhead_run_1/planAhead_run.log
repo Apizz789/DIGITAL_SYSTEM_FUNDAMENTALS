@@ -1,0 +1,79 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/XilinxNotVM/Project/testlab3/pa.fromHdl.tcl
+# create_project -name testlab3 -dir "D:/XilinxNotVM/Project/testlab3/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "testlab3.ucf" [current_fileset -constrset]
+Adding file 'D:/XilinxNotVM/Project/testlab3/testlab3.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Mod10.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {testlab3.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top testlab3 $srcset
+# add_files [list {testlab3.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/XilinxNotVM/Project/testlab3/testlab3.vhf" into library work
+Loading clock regions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/XilinxNotVM/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/XilinxNotVM/Project/testlab3/testlab3.ucf]
+Finished Parsing UCF File [D:/XilinxNotVM/Project/testlab3/testlab3.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: bbc386b0
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 559.703 ; gain = 116.516
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  n0]]
+set_property package_pin "" [get_ports [list  n1]]
+startgroup
+set_property package_pin P82 [get_ports n0]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports n1]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports n2]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports n3]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports n4]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports n5]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports n6]
+endgroup
+startgroup
+set_property package_pin P67 [get_ports n7]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports osc]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Nov 29 15:00:55 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab5/lab5sch.xst" -ofn "D:/XilinxNotVM/Project/lab5/lab5sch.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab5/lab5sch.xst" -ofn "D:/XilinxNotVM/Project/lab5/lab5sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5sch.ucf -p xc6slx9-tqg144-3 lab5sch.ngc lab5sch.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5sch_map.ncd lab5sch.ngd lab5sch.pcf 
+par -w -intstyle ise -ol high -mt off lab5sch_map.ncd lab5sch.ncd lab5sch.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5sch.twx lab5sch.ncd -o lab5sch.twr lab5sch.pcf -ucf lab5sch.ucf 
+bitgen -intstyle ise -f lab5sch.ut lab5sch.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab5/lab5sch.xst" -ofn "D:/XilinxNotVM/Project/lab5/lab5sch.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab5/lab5sch.xst" -ofn "D:/XilinxNotVM/Project/lab5/lab5sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5sch.ucf -p xc6slx9-tqg144-3 lab5sch.ngc lab5sch.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5sch_map.ncd lab5sch.ngd lab5sch.pcf 
+par -w -intstyle ise -ol high -mt off lab5sch_map.ncd lab5sch.ncd lab5sch.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5sch.twx lab5sch.ncd -o lab5sch.twr lab5sch.pcf -ucf lab5sch.ucf 
+bitgen -intstyle ise -f lab5sch.ut lab5sch.ncd 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab5/lab5sch.xst" -ofn "D:/XilinxNotVM/Project/lab5/lab5sch.syr" 
+xst -intstyle ise -ifn "D:/XilinxNotVM/Project/lab5/lab5sch.xst" -ofn "D:/XilinxNotVM/Project/lab5/lab5sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5sch.ucf -p xc6slx9-tqg144-3 lab5sch.ngc lab5sch.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5sch_map.ncd lab5sch.ngd lab5sch.pcf 
+par -w -intstyle ise -ol high -mt off lab5sch_map.ncd lab5sch.ncd lab5sch.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5sch.twx lab5sch.ncd -o lab5sch.twr lab5sch.pcf -ucf lab5sch.ucf 
+bitgen -intstyle ise -f lab5sch.ut lab5sch.ncd 
+xst -intstyle ise -ifn "C:/Users/dunkdink/Desktop/Digital2D-master/lab5/lab5sch.xst" -ofn "C:/Users/dunkdink/Desktop/Digital2D-master/lab5/lab5sch.syr" 
+xst -intstyle ise -ifn "C:/Users/dunkdink/Desktop/Digital2D-master/lab5/lab5sch.xst" -ofn "C:/Users/dunkdink/Desktop/Digital2D-master/lab5/lab5sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab5sch.ucf -p xc6slx9-tqg144-3 lab5sch.ngc lab5sch.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab5sch_map.ncd lab5sch.ngd lab5sch.pcf 
+par -w -intstyle ise -ol high -mt off lab5sch_map.ncd lab5sch.ncd lab5sch.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab5sch.twx lab5sch.ncd -o lab5sch.twr lab5sch.pcf -ucf lab5sch.ucf 
+bitgen -intstyle ise -f lab5sch.ut lab5sch.ncd 
