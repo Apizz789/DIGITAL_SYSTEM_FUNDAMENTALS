@@ -1,0 +1,16 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog controller00to59_drc.vf -w E:/digit_program/project/ClockTimer/controller00to59.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog controller00to59_drc.vf -w E:/digit_program/project/ClockTimer/controller00to59.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog controller00to59_drc.vf -w E:/digit_program/project/ClockTimer/controller00to59.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog controller00to59_drc.vf -w E:/digit_program/project/ClockTimer/controller00to59.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog controller00to59_drc.vf -w E:/digit_program/project/ClockTimer/controller00to59.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog controller00to59_drc.vf -w E:/digit_program/project/ClockTimer/controller00to59.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym controller00to59 E:/digit_program/project/ClockTimer/controller00to59.sch E:/digit_program/project/ClockTimer/controller00to59.sym 

@@ -1,0 +1,99 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : controller.vf
+// /___/   /\     Timestamp : 10/27/2020 17:05:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/controller.vf -w E:/digit_program/project/ClockTimer/controller.sch
+//Design Name: controller
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_controller(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module resetTimer_MUSER_controller(pause_state, 
+                                   reset_button, 
+                                   reset_output);
+
+    input pause_state;
+    input reset_button;
+   output reset_output;
+   
+   
+   AND2B1  XLXI_2 (.I0(pause_state), 
+                  .I1(reset_button), 
+                  .O(reset_output));
+endmodule
+`timescale 1ns / 1ps
+
+module pause_resume_MUSER_controller(pause_button, 
+                                     pause_output);
+
+    input pause_button;
+   output pause_output;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   (* HU_SET = "XLXI_1_8" *) 
+   FTC_HXILINX_controller  XLXI_1 (.C(pause_button), 
+                                  .CLR(XLXN_4), 
+                                  .T(XLXN_5), 
+                                  .Q(pause_output));
+   VCC  XLXI_3 (.P(XLXN_5));
+   GND  XLXI_4 (.G(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module controller(pause_button, 
+                  reset_button, 
+                  pauseTime, 
+                  resetTime);
+
+    input pause_button;
+    input reset_button;
+   output pauseTime;
+   output resetTime;
+   
+   wire pauseTime_DUMMY;
+   
+   assign pauseTime = pauseTime_DUMMY;
+   pause_resume_MUSER_controller  XLXI_1 (.pause_button(pause_button), 
+                                         .pause_output(pauseTime_DUMMY));
+   resetTimer_MUSER_controller  XLXI_2 (.pause_state(pauseTime_DUMMY), 
+                                       .reset_button(reset_button), 
+                                       .reset_output(resetTime));
+endmodule

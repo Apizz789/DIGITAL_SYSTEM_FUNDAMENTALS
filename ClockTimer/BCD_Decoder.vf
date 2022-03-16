@@ -1,0 +1,346 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : BCD_Decoder.vf
+// /___/   /\     Timestamp : 10/27/2020 17:38:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/BCD_Decoder.vf -w E:/digit_program/project/ClockTimer/BCD_Decoder.sch
+//Design Name: BCD_Decoder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module bcd_for_b_MUSER_BCD_Decoder(B, 
+                                   C, 
+                                   D, 
+                                   b_7);
+
+    input B;
+    input C;
+    input D;
+   output b_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_6;
+   wire XLXN_10;
+   wire XLXN_11;
+   
+   OR3  XLXI_1 (.I0(XLXN_11), 
+               .I1(XLXN_10), 
+               .I2(XLXN_6), 
+               .O(b_7));
+   AND2  XLXI_2 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_10));
+   AND2  XLXI_3 (.I0(D), 
+                .I1(C), 
+                .O(XLXN_11));
+   INV  XLXI_4 (.I(B), 
+               .O(XLXN_6));
+   INV  XLXI_5 (.I(C), 
+               .O(XLXN_1));
+   INV  XLXI_6 (.I(D), 
+               .O(XLXN_2));
+endmodule
+`timescale 1ns / 1ps
+
+module bcd_for_c_MUSER_BCD_Decoder(B, 
+                                   C, 
+                                   D, 
+                                   XLXN_5);
+
+    input B;
+    input C;
+    input D;
+   output XLXN_5;
+   
+   wire XLXN_1;
+   
+   OR3  XLXI_1 (.I0(D), 
+               .I1(XLXN_1), 
+               .I2(B), 
+               .O(XLXN_5));
+   INV  XLXI_2 (.I(C), 
+               .O(XLXN_1));
+endmodule
+`timescale 1ns / 1ps
+
+module bcd_for_d_MUSER_BCD_Decoder(A, 
+                                   B, 
+                                   C, 
+                                   D, 
+                                   d_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output d_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   AND2  XLXI_2 (.I0(XLXN_6), 
+                .I1(XLXN_5), 
+                .O(XLXN_1));
+   AND2  XLXI_3 (.I0(XLXN_7), 
+                .I1(C), 
+                .O(XLXN_2));
+   AND2  XLXI_5 (.I0(C), 
+                .I1(XLXN_9), 
+                .O(XLXN_4));
+   INV  XLXI_6 (.I(B), 
+               .O(XLXN_5));
+   INV  XLXI_7 (.I(D), 
+               .O(XLXN_6));
+   INV  XLXI_8 (.I(D), 
+               .O(XLXN_7));
+   AND3  XLXI_9 (.I0(D), 
+                .I1(XLXN_8), 
+                .I2(B), 
+                .O(XLXN_3));
+   INV  XLXI_10 (.I(C), 
+                .O(XLXN_8));
+   INV  XLXI_11 (.I(B), 
+                .O(XLXN_9));
+   OR5  XLXI_12 (.I0(XLXN_4), 
+                .I1(XLXN_3), 
+                .I2(XLXN_2), 
+                .I3(XLXN_1), 
+                .I4(A), 
+                .O(d_7));
+endmodule
+`timescale 1ns / 1ps
+
+module bcd_for_e_MUSER_BCD_Decoder(A, 
+                                   C, 
+                                   D, 
+                                   e_7);
+
+    input A;
+    input C;
+    input D;
+   output e_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_5;
+   wire XLXN_6;
+   
+   OR2  XLXI_1 (.I0(XLXN_6), 
+               .I1(XLXN_5), 
+               .O(e_7));
+   AND2  XLXI_2 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_5));
+   AND2  XLXI_3 (.I0(XLXN_3), 
+                .I1(C), 
+                .O(XLXN_6));
+   INV  XLXI_7 (.I(A), 
+               .O(XLXN_1));
+   INV  XLXI_8 (.I(D), 
+               .O(XLXN_2));
+   INV  XLXI_9 (.I(D), 
+               .O(XLXN_3));
+endmodule
+`timescale 1ns / 1ps
+
+module bcd_for_f_MUSER_BCD_Decoder(A, 
+                                   B, 
+                                   C, 
+                                   D, 
+                                   f_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output f_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   OR4  XLXI_1 (.I0(XLXN_15), 
+               .I1(XLXN_14), 
+               .I2(XLXN_13), 
+               .I3(A), 
+               .O(f_7));
+   AND2  XLXI_2 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_13));
+   AND2  XLXI_3 (.I0(XLXN_3), 
+                .I1(B), 
+                .O(XLXN_14));
+   AND2  XLXI_4 (.I0(XLXN_4), 
+                .I1(B), 
+                .O(XLXN_15));
+   INV  XLXI_5 (.I(C), 
+               .O(XLXN_1));
+   INV  XLXI_6 (.I(D), 
+               .O(XLXN_2));
+   INV  XLXI_7 (.I(C), 
+               .O(XLXN_3));
+   INV  XLXI_8 (.I(D), 
+               .O(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module bcd_for_g_MUSER_BCD_Decoder(A, 
+                                   B, 
+                                   C, 
+                                   D, 
+                                   g_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output g_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   
+   OR4  XLXI_1 (.I0(XLXN_13), 
+               .I1(XLXN_12), 
+               .I2(XLXN_11), 
+               .I3(A), 
+               .O(g_7));
+   AND2  XLXI_2 (.I0(C), 
+                .I1(XLXN_1), 
+                .O(XLXN_11));
+   AND2  XLXI_3 (.I0(XLXN_2), 
+                .I1(B), 
+                .O(XLXN_12));
+   AND2  XLXI_4 (.I0(XLXN_3), 
+                .I1(B), 
+                .O(XLXN_13));
+   INV  XLXI_5 (.I(B), 
+               .O(XLXN_1));
+   INV  XLXI_6 (.I(C), 
+               .O(XLXN_2));
+   INV  XLXI_7 (.I(D), 
+               .O(XLXN_3));
+endmodule
+`timescale 1ns / 1ps
+
+module bcd_for_a_MUSER_BCD_Decoder(A, 
+                                   B, 
+                                   C, 
+                                   D, 
+                                   a_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output a_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_12;
+   wire XLXN_14;
+   
+   AND2  XLXI_1 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_14));
+   AND2  XLXI_2 (.I0(D), 
+                .I1(B), 
+                .O(XLXN_12));
+   OR4  XLXI_3 (.I0(XLXN_14), 
+               .I1(XLXN_12), 
+               .I2(C), 
+               .I3(A), 
+               .O(a_7));
+   INV  XLXI_4 (.I(B), 
+               .O(XLXN_1));
+   INV  XLXI_5 (.I(D), 
+               .O(XLXN_2));
+endmodule
+`timescale 1ns / 1ps
+
+module BCD_Decoder(A, 
+                   B, 
+                   C, 
+                   D, 
+                   a_BCD, 
+                   b_BCD, 
+                   c_BCD, 
+                   d_BCD, 
+                   e_BCD, 
+                   f_BCD, 
+                   g_BCD);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output a_BCD;
+   output b_BCD;
+   output c_BCD;
+   output d_BCD;
+   output e_BCD;
+   output f_BCD;
+   output g_BCD;
+   
+   
+   bcd_for_a_MUSER_BCD_Decoder  XLXI_1 (.A(A), 
+                                       .B(B), 
+                                       .C(C), 
+                                       .D(D), 
+                                       .a_7(a_BCD));
+   bcd_for_g_MUSER_BCD_Decoder  XLXI_2 (.A(A), 
+                                       .B(B), 
+                                       .C(C), 
+                                       .D(D), 
+                                       .g_7(g_BCD));
+   bcd_for_f_MUSER_BCD_Decoder  XLXI_3 (.A(A), 
+                                       .B(B), 
+                                       .C(C), 
+                                       .D(D), 
+                                       .f_7(f_BCD));
+   bcd_for_e_MUSER_BCD_Decoder  XLXI_4 (.A(A), 
+                                       .C(C), 
+                                       .D(D), 
+                                       .e_7(e_BCD));
+   bcd_for_d_MUSER_BCD_Decoder  XLXI_5 (.A(A), 
+                                       .B(B), 
+                                       .C(C), 
+                                       .D(D), 
+                                       .d_7(d_BCD));
+   bcd_for_c_MUSER_BCD_Decoder  XLXI_6 (.B(B), 
+                                       .C(C), 
+                                       .D(D), 
+                                       .XLXN_5(c_BCD));
+   bcd_for_b_MUSER_BCD_Decoder  XLXI_7 (.B(B), 
+                                       .C(C), 
+                                       .D(D), 
+                                       .b_7(b_BCD));
+endmodule

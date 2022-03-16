@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bcd_for_d.vf
+// /___/   /\     Timestamp : 10/27/2020 17:38:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/bcd_for_d.vf -w E:/digit_program/project/ClockTimer/bcd_for_d.sch
+//Design Name: bcd_for_d
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module bcd_for_d(A, 
+                 B, 
+                 C, 
+                 D, 
+                 d_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output d_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   AND2  XLXI_2 (.I0(XLXN_6), 
+                .I1(XLXN_5), 
+                .O(XLXN_1));
+   AND2  XLXI_3 (.I0(XLXN_7), 
+                .I1(C), 
+                .O(XLXN_2));
+   AND2  XLXI_5 (.I0(C), 
+                .I1(XLXN_9), 
+                .O(XLXN_4));
+   INV  XLXI_6 (.I(B), 
+               .O(XLXN_5));
+   INV  XLXI_7 (.I(D), 
+               .O(XLXN_6));
+   INV  XLXI_8 (.I(D), 
+               .O(XLXN_7));
+   AND3  XLXI_9 (.I0(D), 
+                .I1(XLXN_8), 
+                .I2(B), 
+                .O(XLXN_3));
+   INV  XLXI_10 (.I(C), 
+                .O(XLXN_8));
+   INV  XLXI_11 (.I(B), 
+                .O(XLXN_9));
+   OR5  XLXI_12 (.I0(XLXN_4), 
+                .I1(XLXN_3), 
+                .I2(XLXN_2), 
+                .I3(XLXN_1), 
+                .I4(A), 
+                .O(d_7));
+endmodule

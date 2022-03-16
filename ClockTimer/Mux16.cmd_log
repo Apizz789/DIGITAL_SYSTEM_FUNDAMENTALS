@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Mux16_drc.vf -w E:/digit_program/project/ClockTimer/Mux16.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux16_drc.vf -w E:/digit_program/project/ClockTimer/Mux16.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux16_drc.vf -w E:/digit_program/project/ClockTimer/Mux16.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux16_drc.vf -w E:/digit_program/project/ClockTimer/Mux16.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux16 E:/digit_program/project/ClockTimer/Mux16.sch E:/digit_program/project/ClockTimer/Mux16.sym 

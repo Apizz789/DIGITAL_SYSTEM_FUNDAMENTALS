@@ -1,0 +1,131 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : controller00to59.vf
+// /___/   /\     Timestamp : 10/28/2020 00:04:43
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/controller00to59.vf -w E:/digit_program/project/ClockTimer/controller00to59.sch
+//Design Name: controller00to59
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_controller00to59(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module controller00to59(Clock, 
+                        reset_button, 
+                        data, 
+                        SW_reset);
+
+    input Clock;
+    input reset_button;
+   output [7:0] data;
+   output SW_reset;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_26;
+   wire XLXN_37;
+   wire SW_reset_DUMMY;
+   wire [7:0] data_DUMMY;
+   
+   assign data[7:0] = data_DUMMY[7:0];
+   assign SW_reset = SW_reset_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   CD4CE_HXILINX_controller00to59  XLXI_1 (.C(XLXN_37), 
+                                          .CE(XLXN_6), 
+                                          .CLR(XLXN_26), 
+                                          .CEO(), 
+                                          .Q0(data_DUMMY[0]), 
+                                          .Q1(data_DUMMY[1]), 
+                                          .Q2(data_DUMMY[2]), 
+                                          .Q3(data_DUMMY[3]), 
+                                          .TC(XLXN_2));
+   (* HU_SET = "XLXI_2_1" *) 
+   CD4CE_HXILINX_controller00to59  XLXI_2 (.C(XLXN_3), 
+                                          .CE(XLXN_7), 
+                                          .CLR(XLXN_26), 
+                                          .CEO(), 
+                                          .Q0(data_DUMMY[4]), 
+                                          .Q1(data_DUMMY[5]), 
+                                          .Q2(data_DUMMY[6]), 
+                                          .Q3(data_DUMMY[7]), 
+                                          .TC());
+   INV  XLXI_3 (.I(XLXN_2), 
+               .O(XLXN_3));
+   VCC  XLXI_6 (.P(XLXN_6));
+   VCC  XLXI_7 (.P(XLXN_7));
+   AND4  XLXI_9 (.I0(XLXN_23), 
+                .I1(data_DUMMY[6]), 
+                .I2(data_DUMMY[5]), 
+                .I3(XLXN_22), 
+                .O(SW_reset_DUMMY));
+   INV  XLXI_12 (.I(data_DUMMY[4]), 
+                .O(XLXN_22));
+   INV  XLXI_13 (.I(data_DUMMY[7]), 
+                .O(XLXN_23));
+   OR2  XLXI_14 (.I0(SW_reset_DUMMY), 
+                .I1(reset_button), 
+                .O(XLXN_26));
+   INV  XLXI_15 (.I(Clock), 
+                .O(XLXN_37));
+endmodule

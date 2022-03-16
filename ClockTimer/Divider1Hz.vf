@@ -1,0 +1,186 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Divider1Hz.vf
+// /___/   /\     Timestamp : 10/27/2020 23:55:06
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/Divider1Hz.vf -w E:/digit_program/project/ClockTimer/Divider1Hz.sch
+//Design Name: Divider1Hz
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_Divider1Hz(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_Divider1Hz(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module DividerBy10_MUSER_Divider1Hz(CLR, 
+                                    in_clk, 
+                                    out_clk);
+
+    input CLR;
+    input in_clk;
+   output out_clk;
+   
+   wire XLXN_3;
+   
+   VCC  XLXI_3 (.P(XLXN_3));
+   (* HU_SET = "XLXI_6_0" *) 
+   CD4CE_HXILINX_Divider1Hz  XLXI_6 (.C(in_clk), 
+                                    .CE(XLXN_3), 
+                                    .CLR(CLR), 
+                                    .CEO(), 
+                                    .Q0(), 
+                                    .Q1(), 
+                                    .Q2(), 
+                                    .Q3(), 
+                                    .TC(out_clk));
+endmodule
+`timescale 1ns / 1ps
+
+module DividerBy2_MUSER_Divider1Hz(CLR, 
+                                   in_clk, 
+                                   out_clk);
+
+    input CLR;
+    input in_clk;
+   output out_clk;
+   
+   wire XLXN_3;
+   
+   (* HU_SET = "XLXI_1_1" *) 
+   FTC_HXILINX_Divider1Hz  XLXI_1 (.C(in_clk), 
+                                  .CLR(CLR), 
+                                  .T(XLXN_3), 
+                                  .Q(out_clk));
+   VCC  XLXI_2 (.P(XLXN_3));
+endmodule
+`timescale 1ns / 1ps
+
+module Divider1Hz(CLK, 
+                  clk_in, 
+                  pause_button, 
+                  clk_out);
+
+    input CLK;
+    input clk_in;
+    input pause_button;
+   output clk_out;
+   
+   wire clk_divBy10;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_114;
+   wire XLXN_115;
+   
+   DividerBy10_MUSER_Divider1Hz  XLXI_6 (.CLR(CLK), 
+                                        .in_clk(XLXN_114), 
+                                        .out_clk(clk_divBy10));
+   DividerBy10_MUSER_Divider1Hz  XLXI_7 (.CLR(CLK), 
+                                        .in_clk(clk_divBy10), 
+                                        .out_clk(XLXN_6));
+   DividerBy10_MUSER_Divider1Hz  XLXI_8 (.CLR(CLK), 
+                                        .in_clk(XLXN_6), 
+                                        .out_clk(XLXN_7));
+   DividerBy10_MUSER_Divider1Hz  XLXI_9 (.CLR(CLK), 
+                                        .in_clk(XLXN_7), 
+                                        .out_clk(XLXN_8));
+   DividerBy10_MUSER_Divider1Hz  XLXI_10 (.CLR(CLK), 
+                                         .in_clk(XLXN_8), 
+                                         .out_clk(XLXN_9));
+   DividerBy10_MUSER_Divider1Hz  XLXI_11 (.CLR(CLK), 
+                                         .in_clk(XLXN_9), 
+                                         .out_clk(XLXN_10));
+   DividerBy10_MUSER_Divider1Hz  XLXI_12 (.CLR(CLK), 
+                                         .in_clk(XLXN_10), 
+                                         .out_clk(XLXN_11));
+   DividerBy2_MUSER_Divider1Hz  XLXI_13 (.CLR(CLK), 
+                                        .in_clk(XLXN_11), 
+                                        .out_clk(clk_out));
+   AND2  XLXI_59 (.I0(pause_button), 
+                 .I1(clk_in), 
+                 .O(XLXN_115));
+   INV  XLXI_80 (.I(XLXN_115), 
+                .O(XLXN_114));
+endmodule

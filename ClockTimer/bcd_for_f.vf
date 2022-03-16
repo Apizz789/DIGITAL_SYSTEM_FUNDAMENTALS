@@ -1,0 +1,65 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bcd_for_f.vf
+// /___/   /\     Timestamp : 10/27/2020 17:38:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/bcd_for_f.vf -w E:/digit_program/project/ClockTimer/bcd_for_f.sch
+//Design Name: bcd_for_f
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module bcd_for_f(A, 
+                 B, 
+                 C, 
+                 D, 
+                 f_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output f_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   OR4  XLXI_1 (.I0(XLXN_15), 
+               .I1(XLXN_14), 
+               .I2(XLXN_13), 
+               .I3(A), 
+               .O(f_7));
+   AND2  XLXI_2 (.I0(XLXN_2), 
+                .I1(XLXN_1), 
+                .O(XLXN_13));
+   AND2  XLXI_3 (.I0(XLXN_3), 
+                .I1(B), 
+                .O(XLXN_14));
+   AND2  XLXI_4 (.I0(XLXN_4), 
+                .I1(B), 
+                .O(XLXN_15));
+   INV  XLXI_5 (.I(C), 
+               .O(XLXN_1));
+   INV  XLXI_6 (.I(D), 
+               .O(XLXN_2));
+   INV  XLXI_7 (.I(C), 
+               .O(XLXN_3));
+   INV  XLXI_8 (.I(D), 
+               .O(XLXN_4));
+endmodule

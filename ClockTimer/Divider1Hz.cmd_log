@@ -1,0 +1,8 @@
+sch2sym -intstyle ise -family spartan6 -refsym Divider1Hz E:/digit_program/project/ClockTimer/Divider1Hz.sch E:/digit_program/project/ClockTimer/Divider1Hz.sym 
+sch2sym -intstyle ise -family spartan6 -refsym Divider1Hz E:/digit_program/project/ClockTimer/Divider1Hz.sch E:/digit_program/project/ClockTimer/Divider1Hz.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Divider1Hz E:/digit_program/project/ClockTimer/Divider1Hz.sch E:/digit_program/project/ClockTimer/Divider1Hz.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Divider1Hz E:/digit_program/project/ClockTimer/Divider1Hz.sch E:/digit_program/project/ClockTimer/Divider1Hz.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Divider1Hz E:/digit_program/project/ClockTimer/Divider1Hz.sch E:/digit_program/project/ClockTimer/Divider1Hz.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Divider1Hz_drc.vf -w E:/digit_program/project/ClockTimer/Divider1Hz.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Divider1Hz_drc.vf -w E:/digit_program/project/ClockTimer/Divider1Hz.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Divider1Hz E:/digit_program/project/ClockTimer/Divider1Hz.sch E:/digit_program/project/ClockTimer/Divider1Hz.sym 

@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym BCD E:/digit_program/project/ClockTimer/BCD.sch E:/digit_program/project/ClockTimer/BCD.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog BCD_drc.vf -w E:/digit_program/project/ClockTimer/BCD.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog BCD_drc.vf -w E:/digit_program/project/ClockTimer/BCD.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog BCD_drc.vf -w E:/digit_program/project/ClockTimer/BCD.sch 

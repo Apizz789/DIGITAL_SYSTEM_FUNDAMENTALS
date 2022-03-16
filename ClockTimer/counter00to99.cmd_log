@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00to99 E:/digit_program/project/ClockTimer/counter00to99.sch E:/digit_program/project/ClockTimer/counter00to99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00to99 E:/digit_program/project/ClockTimer/counter00to99.sch E:/digit_program/project/ClockTimer/counter00to99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00to99 E:/digit_program/project/ClockTimer/counter00to99.sch E:/digit_program/project/ClockTimer/counter00to99.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog counter00to99_drc.vf -w E:/digit_program/project/ClockTimer/counter00to99.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00to99 E:/digit_program/project/ClockTimer/counter00to99.sch E:/digit_program/project/ClockTimer/counter00to99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter00to99 E:/digit_program/project/ClockTimer/counter00to99.sch E:/digit_program/project/ClockTimer/counter00to99.sym 

@@ -1,0 +1,136 @@
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+sch2hdl -intstyle ise -family spartan6 -verilog Timer_drc.vf -w E:/digit_program/project/ClockTimer/Timer.sch 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "E:/digit_program/project/ClockTimer/Timer.xst" -ofn "E:/digit_program/project/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 Timer.ngc Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 
+xst -intstyle ise -ifn "D:/Computer Engineering/Year2/Digital Fundumental/ClockTimer/ClockTimer/Timer.xst" -ofn "D:/Computer Engineering/Year2/Digital Fundumental/ClockTimer/ClockTimer/Timer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TimerPin.ucf -p xc6slx9-tqg144-3 "Timer.ngc" Timer.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Timer_map.ncd Timer.ngd Timer.pcf 
+par -w -intstyle ise -ol high -mt off Timer_map.ncd Timer.ncd Timer.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Timer.twx Timer.ncd -o Timer.twr Timer.pcf -ucf TimerPin.ucf 
+bitgen -intstyle ise -f Timer.ut Timer.ncd 

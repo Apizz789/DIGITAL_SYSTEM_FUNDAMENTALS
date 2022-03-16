@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym d_7 E:/digit_program/project/ClockTimer/d_7.sch E:/digit_program/project/ClockTimer/d_7.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym d_7 E:/digit_program/project/ClockTimer/d_7.sch E:/digit_program/project/ClockTimer/d_7.sym 

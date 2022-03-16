@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="controller">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-10-22T8:37:3</timestamp>
+    <pin polarity="Output" x="432" y="-32" name="pauseTime" />
+    <pin polarity="Input" x="0" y="-32" name="pause_button" />
+    <pin polarity="Output" x="432" y="-96" name="resetTime" />
+    <pin polarity="Input" x="0" y="-96" name="reset_button" />
+    <graph>
+        <rect width="304" x="64" y="-128" height="128" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="216" y="-136" type="symbol" />
+        <line x2="432" y1="-32" y2="-32" x1="368" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-32" type="pin pauseTime" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin pause_button" />
+        <line x2="432" y1="-96" y2="-96" x1="368" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-96" type="pin resetTime" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin reset_button" />
+    </graph>
+</symbol>

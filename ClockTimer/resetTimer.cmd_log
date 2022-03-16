@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym resetTimer E:/digit_program/project/ClockTimer/resetTimer.sch E:/digit_program/project/ClockTimer/resetTimer.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym resetTimer E:/digit_program/project/ClockTimer/resetTimer.sch E:/digit_program/project/ClockTimer/resetTimer.sym 

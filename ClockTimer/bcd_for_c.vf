@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bcd_for_c.vf
+// /___/   /\     Timestamp : 10/27/2020 17:38:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/bcd_for_c.vf -w E:/digit_program/project/ClockTimer/bcd_for_c.sch
+//Design Name: bcd_for_c
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module bcd_for_c(B, 
+                 C, 
+                 D, 
+                 XLXN_5);
+
+    input B;
+    input C;
+    input D;
+   output XLXN_5;
+   
+   wire XLXN_1;
+   
+   OR3  XLXI_1 (.I0(D), 
+               .I1(XLXN_1), 
+               .I2(B), 
+               .O(XLXN_5));
+   INV  XLXI_2 (.I(C), 
+               .O(XLXN_1));
+endmodule

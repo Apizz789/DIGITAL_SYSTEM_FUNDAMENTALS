@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : c_7.vf
+// /___/   /\     Timestamp : 10/27/2020 18:00:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/digit_program/project/ClockTimer/c_7.vf -w E:/digit_program/project/ClockTimer/c_7.sch
+//Design Name: c_7
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module c_7(B, 
+           C, 
+           D, 
+           c_7);
+
+    input B;
+    input C;
+    input D;
+   output c_7;
+   
+   wire XLXN_7;
+   
+   OR3  XLXI_1 (.I0(D), 
+               .I1(XLXN_7), 
+               .I2(B), 
+               .O(c_7));
+   INV  XLXI_2 (.I(C), 
+               .O(XLXN_7));
+endmodule

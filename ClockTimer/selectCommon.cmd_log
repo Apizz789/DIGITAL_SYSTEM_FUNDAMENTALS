@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog selectCommon_drc.vf -w E:/digit_program/project/ClockTimer/selectCommon.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym selectCommon E:/digit_program/project/ClockTimer/selectCommon.sch E:/digit_program/project/ClockTimer/selectCommon.sym 

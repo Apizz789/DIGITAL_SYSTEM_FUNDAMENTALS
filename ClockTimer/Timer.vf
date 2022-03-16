@@ -1,0 +1,991 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Timer.vf
+// /___/   /\     Timestamp : 10/29/2020 01:33:06
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "D:/Computer Engineering/Year2/Digital Fundumental/ClockTimer/ClockTimer/Timer.vf" -w "D:/Computer Engineering/Year2/Digital Fundumental/ClockTimer/ClockTimer/Timer.sch"
+//Design Name: Timer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_Timer(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_Timer(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module M4_1E_HXILINX_Timer (O, D0, D1, D2, D3, E, S0, S1);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  D2;
+   input  D3;
+   input  E;
+   input  S0;
+   input  S1;
+
+   reg O;
+
+   always @ ( D0 or D1 or D2 or D3 or E or S0 or S1)
+   begin
+      if(!E)
+      O <= 1'b0;
+      else 
+      begin
+        case({S1,S0})
+        2'b00 : O <= D0;
+        2'b01 : O <= D1;
+        2'b10 : O <= D2;
+        2'b11 : O <= D3;
+        endcase
+      end
+   end
+    
+endmodule
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_Timer(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module controller00to59_MUSER_Timer(Clock, 
+                                    reset_button, 
+                                    data, 
+                                    SW_reset);
+
+    input Clock;
+    input reset_button;
+   output [7:0] data;
+   output SW_reset;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_26;
+   wire XLXN_37;
+   wire SW_reset_DUMMY;
+   wire [7:0] data_DUMMY;
+   
+   assign data[7:0] = data_DUMMY[7:0];
+   assign SW_reset = SW_reset_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   CD4CE_HXILINX_Timer  XLXI_1 (.C(XLXN_37), 
+                               .CE(XLXN_6), 
+                               .CLR(XLXN_26), 
+                               .CEO(), 
+                               .Q0(data_DUMMY[0]), 
+                               .Q1(data_DUMMY[1]), 
+                               .Q2(data_DUMMY[2]), 
+                               .Q3(data_DUMMY[3]), 
+                               .TC(XLXN_2));
+   (* HU_SET = "XLXI_2_1" *) 
+   CD4CE_HXILINX_Timer  XLXI_2 (.C(XLXN_3), 
+                               .CE(XLXN_7), 
+                               .CLR(XLXN_26), 
+                               .CEO(), 
+                               .Q0(data_DUMMY[4]), 
+                               .Q1(data_DUMMY[5]), 
+                               .Q2(data_DUMMY[6]), 
+                               .Q3(data_DUMMY[7]), 
+                               .TC());
+   INV  XLXI_3 (.I(XLXN_2), 
+               .O(XLXN_3));
+   VCC  XLXI_6 (.P(XLXN_6));
+   VCC  XLXI_7 (.P(XLXN_7));
+   AND4  XLXI_9 (.I0(XLXN_23), 
+                .I1(data_DUMMY[6]), 
+                .I2(data_DUMMY[5]), 
+                .I3(XLXN_22), 
+                .O(SW_reset_DUMMY));
+   INV  XLXI_12 (.I(data_DUMMY[4]), 
+                .O(XLXN_22));
+   INV  XLXI_13 (.I(data_DUMMY[7]), 
+                .O(XLXN_23));
+   OR2  XLXI_14 (.I0(SW_reset_DUMMY), 
+                .I1(reset_button), 
+                .O(XLXN_26));
+   INV  XLXI_15 (.I(Clock), 
+                .O(XLXN_37));
+endmodule
+`timescale 1ns / 1ps
+
+module DividerBy10_MUSER_Timer(CLR, 
+                               in_clk, 
+                               out_clk);
+
+    input CLR;
+    input in_clk;
+   output out_clk;
+   
+   wire XLXN_3;
+   
+   VCC  XLXI_3 (.P(XLXN_3));
+   (* HU_SET = "XLXI_6_2" *) 
+   CD4CE_HXILINX_Timer  XLXI_6 (.C(in_clk), 
+                               .CE(XLXN_3), 
+                               .CLR(CLR), 
+                               .CEO(), 
+                               .Q0(), 
+                               .Q1(), 
+                               .Q2(), 
+                               .Q3(), 
+                               .TC(out_clk));
+endmodule
+`timescale 1ns / 1ps
+
+module DividerBy2_MUSER_Timer(CLR, 
+                              in_clk, 
+                              out_clk);
+
+    input CLR;
+    input in_clk;
+   output out_clk;
+   
+   wire XLXN_3;
+   
+   (* HU_SET = "XLXI_1_3" *) 
+   FTC_HXILINX_Timer  XLXI_1 (.C(in_clk), 
+                             .CLR(CLR), 
+                             .T(XLXN_3), 
+                             .Q(out_clk));
+   VCC  XLXI_2 (.P(XLXN_3));
+endmodule
+`timescale 1ns / 1ps
+
+module Divider1Hz_MUSER_Timer(CLK, 
+                              clk_in, 
+                              pause_button, 
+                              clk_out);
+
+    input CLK;
+    input clk_in;
+    input pause_button;
+   output clk_out;
+   
+   wire clk_divBy10;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_114;
+   wire XLXN_115;
+   
+   DividerBy10_MUSER_Timer  XLXI_6 (.CLR(CLK), 
+                                   .in_clk(XLXN_114), 
+                                   .out_clk(clk_divBy10));
+   DividerBy10_MUSER_Timer  XLXI_7 (.CLR(CLK), 
+                                   .in_clk(clk_divBy10), 
+                                   .out_clk(XLXN_6));
+   DividerBy10_MUSER_Timer  XLXI_8 (.CLR(CLK), 
+                                   .in_clk(XLXN_6), 
+                                   .out_clk(XLXN_7));
+   DividerBy10_MUSER_Timer  XLXI_9 (.CLR(CLK), 
+                                   .in_clk(XLXN_7), 
+                                   .out_clk(XLXN_8));
+   DividerBy10_MUSER_Timer  XLXI_10 (.CLR(CLK), 
+                                    .in_clk(XLXN_8), 
+                                    .out_clk(XLXN_9));
+   DividerBy10_MUSER_Timer  XLXI_11 (.CLR(CLK), 
+                                    .in_clk(XLXN_9), 
+                                    .out_clk(XLXN_10));
+   DividerBy10_MUSER_Timer  XLXI_12 (.CLR(CLK), 
+                                    .in_clk(XLXN_10), 
+                                    .out_clk(XLXN_11));
+   DividerBy2_MUSER_Timer  XLXI_13 (.CLR(CLK), 
+                                   .in_clk(XLXN_11), 
+                                   .out_clk(clk_out));
+   AND2  XLXI_59 (.I0(pause_button), 
+                 .I1(clk_in), 
+                 .O(XLXN_115));
+   INV  XLXI_80 (.I(XLXN_115), 
+                .O(XLXN_114));
+endmodule
+`timescale 1ns / 1ps
+
+module resetTimer_MUSER_Timer(pause_state, 
+                              reset_button, 
+                              reset_output);
+
+    input pause_state;
+    input reset_button;
+   output reset_output;
+   
+   
+   AND2B1  XLXI_2 (.I0(pause_state), 
+                  .I1(reset_button), 
+                  .O(reset_output));
+endmodule
+`timescale 1ns / 1ps
+
+module pause_resume_MUSER_Timer(pause_button, 
+                                pause_output);
+
+    input pause_button;
+   output pause_output;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   (* HU_SET = "XLXI_1_4" *) 
+   FTC_HXILINX_Timer  XLXI_1 (.C(pause_button), 
+                             .CLR(XLXN_4), 
+                             .T(XLXN_5), 
+                             .Q(pause_output));
+   VCC  XLXI_3 (.P(XLXN_5));
+   GND  XLXI_4 (.G(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module controller_MUSER_Timer(pause_button, 
+                              reset_button, 
+                              pauseTime, 
+                              resetTime);
+
+    input pause_button;
+    input reset_button;
+   output pauseTime;
+   output resetTime;
+   
+   wire pauseTime_DUMMY;
+   
+   assign pauseTime = pauseTime_DUMMY;
+   pause_resume_MUSER_Timer  XLXI_1 (.pause_button(pause_button), 
+                                    .pause_output(pauseTime_DUMMY));
+   resetTimer_MUSER_Timer  XLXI_2 (.pause_state(pauseTime_DUMMY), 
+                                  .reset_button(reset_button), 
+                                  .reset_output(resetTime));
+endmodule
+`timescale 1ns / 1ps
+
+module counter00to99_MUSER_Timer(Clock, 
+                                 reset_button, 
+                                 data);
+
+    input Clock;
+    input reset_button;
+   output [15:8] data;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   (* HU_SET = "XLXI_1_5" *) 
+   CD4CE_HXILINX_Timer  XLXI_1 (.C(Clock), 
+                               .CE(XLXN_6), 
+                               .CLR(reset_button), 
+                               .CEO(), 
+                               .Q0(data[8]), 
+                               .Q1(data[9]), 
+                               .Q2(data[10]), 
+                               .Q3(data[11]), 
+                               .TC(XLXN_2));
+   (* HU_SET = "XLXI_2_6" *) 
+   CD4CE_HXILINX_Timer  XLXI_2 (.C(XLXN_3), 
+                               .CE(XLXN_7), 
+                               .CLR(reset_button), 
+                               .CEO(), 
+                               .Q0(data[12]), 
+                               .Q1(data[13]), 
+                               .Q2(data[14]), 
+                               .Q3(data[15]), 
+                               .TC());
+   INV  XLXI_3 (.I(XLXN_2), 
+               .O(XLXN_3));
+   VCC  XLXI_6 (.P(XLXN_6));
+   VCC  XLXI_7 (.P(XLXN_7));
+endmodule
+`timescale 1ns / 1ps
+
+module selectCommon_MUSER_Timer(clk_select, 
+                                com0, 
+                                com1, 
+                                com2, 
+                                com3);
+
+    input clk_select;
+   output com0;
+   output com1;
+   output com2;
+   output com3;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_18;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire XLXN_30;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   
+   (* HU_SET = "XLXI_1_7" *) 
+   CB2CE_HXILINX_Timer  XLXI_1 (.C(clk_select), 
+                               .CE(XLXN_1), 
+                               .CLR(XLXN_2), 
+                               .CEO(), 
+                               .Q0(XLXN_4), 
+                               .Q1(XLXN_5), 
+                               .TC());
+   VCC  XLXI_2 (.P(XLXN_1));
+   GND  XLXI_3 (.G(XLXN_2));
+   (* HU_SET = "XLXI_4_8" *) 
+   M4_1E_HXILINX_Timer  XLXI_4 (.D0(XLXN_29), 
+                               .D1(XLXN_30), 
+                               .D2(XLXN_30), 
+                               .D3(XLXN_30), 
+                               .E(XLXN_6), 
+                               .S0(XLXN_4), 
+                               .S1(XLXN_5), 
+                               .O(com0));
+   VCC  XLXI_5 (.P(XLXN_6));
+   (* HU_SET = "XLXI_6_11" *) 
+   M4_1E_HXILINX_Timer  XLXI_6 (.D0(XLXN_30), 
+                               .D1(XLXN_33), 
+                               .D2(XLXN_30), 
+                               .D3(XLXN_30), 
+                               .E(XLXN_18), 
+                               .S0(XLXN_4), 
+                               .S1(XLXN_5), 
+                               .O(com1));
+   (* HU_SET = "XLXI_7_9" *) 
+   M4_1E_HXILINX_Timer  XLXI_7 (.D0(XLXN_30), 
+                               .D1(XLXN_30), 
+                               .D2(XLXN_34), 
+                               .D3(XLXN_30), 
+                               .E(XLXN_27), 
+                               .S0(XLXN_4), 
+                               .S1(XLXN_5), 
+                               .O(com2));
+   (* HU_SET = "XLXI_8_10" *) 
+   M4_1E_HXILINX_Timer  XLXI_8 (.D0(XLXN_30), 
+                               .D1(XLXN_30), 
+                               .D2(XLXN_30), 
+                               .D3(XLXN_35), 
+                               .E(XLXN_28), 
+                               .S0(XLXN_4), 
+                               .S1(XLXN_5), 
+                               .O(com3));
+   VCC  XLXI_9 (.P(XLXN_18));
+   VCC  XLXI_11 (.P(XLXN_27));
+   VCC  XLXI_12 (.P(XLXN_28));
+   VCC  XLXI_13 (.P(XLXN_30));
+   GND  XLXI_14 (.G(XLXN_29));
+   GND  XLXI_21 (.G(XLXN_33));
+   GND  XLXI_22 (.G(XLXN_34));
+   GND  XLXI_23 (.G(XLXN_35));
+endmodule
+`timescale 1ns / 1ps
+
+module a_7_MUSER_Timer(A, 
+                       B, 
+                       C, 
+                       D, 
+                       a_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output a_7;
+   
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_13;
+   
+   AND2  XLXI_1 (.I0(D), 
+                .I1(B), 
+                .O(XLXN_8));
+   AND2  XLXI_2 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .O(XLXN_13));
+   OR4  XLXI_3 (.I0(XLXN_13), 
+               .I1(XLXN_8), 
+               .I2(C), 
+               .I3(A), 
+               .O(a_7));
+   INV  XLXI_4 (.I(B), 
+               .O(XLXN_9));
+   INV  XLXI_5 (.I(D), 
+               .O(XLXN_10));
+endmodule
+`timescale 1ns / 1ps
+
+module b_7_MUSER_Timer(B, 
+                       C, 
+                       D, 
+                       b_7);
+
+    input B;
+    input C;
+    input D;
+   output b_7;
+   
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   AND2  XLXI_1 (.I0(D), 
+                .I1(C), 
+                .O(XLXN_14));
+   AND2  XLXI_2 (.I0(XLXN_9), 
+                .I1(XLXN_8), 
+                .O(XLXN_12));
+   INV  XLXI_3 (.I(C), 
+               .O(XLXN_8));
+   INV  XLXI_4 (.I(D), 
+               .O(XLXN_9));
+   OR3  XLXI_5 (.I0(XLXN_14), 
+               .I1(XLXN_12), 
+               .I2(XLXN_15), 
+               .O(b_7));
+   INV  XLXI_7 (.I(B), 
+               .O(XLXN_15));
+endmodule
+`timescale 1ns / 1ps
+
+module c_7_MUSER_Timer(B, 
+                       C, 
+                       D, 
+                       c_7);
+
+    input B;
+    input C;
+    input D;
+   output c_7;
+   
+   wire XLXN_7;
+   
+   OR3  XLXI_1 (.I0(D), 
+               .I1(XLXN_7), 
+               .I2(B), 
+               .O(c_7));
+   INV  XLXI_2 (.I(C), 
+               .O(XLXN_7));
+endmodule
+`timescale 1ns / 1ps
+
+module d_7_MUSER_Timer(A, 
+                       B, 
+                       C, 
+                       D, 
+                       d_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output d_7;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   
+   AND2  XLXI_1 (.I0(XLXN_8), 
+                .I1(XLXN_7), 
+                .O(XLXN_17));
+   AND2  XLXI_2 (.I0(XLXN_9), 
+                .I1(C), 
+                .O(XLXN_18));
+   AND3  XLXI_3 (.I0(D), 
+                .I1(XLXN_10), 
+                .I2(B), 
+                .O(XLXN_19));
+   AND2  XLXI_4 (.I0(C), 
+                .I1(XLXN_11), 
+                .O(XLXN_20));
+   INV  XLXI_9 (.I(B), 
+               .O(XLXN_7));
+   INV  XLXI_10 (.I(D), 
+                .O(XLXN_8));
+   INV  XLXI_11 (.I(D), 
+                .O(XLXN_9));
+   INV  XLXI_12 (.I(C), 
+                .O(XLXN_10));
+   INV  XLXI_13 (.I(B), 
+                .O(XLXN_11));
+   OR5  XLXI_14 (.I0(XLXN_20), 
+                .I1(XLXN_19), 
+                .I2(XLXN_18), 
+                .I3(XLXN_17), 
+                .I4(A), 
+                .O(d_7));
+endmodule
+`timescale 1ns / 1ps
+
+module e_7_MUSER_Timer(B, 
+                       C, 
+                       D, 
+                       e_7);
+
+    input B;
+    input C;
+    input D;
+   output e_7;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_13;
+   wire XLXN_14;
+   
+   AND2  XLXI_1 (.I0(XLXN_8), 
+                .I1(XLXN_7), 
+                .O(XLXN_13));
+   AND2  XLXI_2 (.I0(XLXN_9), 
+                .I1(C), 
+                .O(XLXN_14));
+   INV  XLXI_3 (.I(B), 
+               .O(XLXN_7));
+   INV  XLXI_4 (.I(D), 
+               .O(XLXN_8));
+   INV  XLXI_5 (.I(D), 
+               .O(XLXN_9));
+   OR2  XLXI_6 (.I0(XLXN_14), 
+               .I1(XLXN_13), 
+               .O(e_7));
+endmodule
+`timescale 1ns / 1ps
+
+module f_7_MUSER_Timer(A, 
+                       B, 
+                       C, 
+                       D, 
+                       f_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output f_7;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_18;
+   wire XLXN_20;
+   wire XLXN_21;
+   
+   AND2  XLXI_2 (.I0(XLXN_8), 
+                .I1(XLXN_7), 
+                .O(XLXN_18));
+   AND2  XLXI_3 (.I0(XLXN_9), 
+                .I1(B), 
+                .O(XLXN_20));
+   AND2  XLXI_4 (.I0(XLXN_10), 
+                .I1(B), 
+                .O(XLXN_21));
+   OR4  XLXI_8 (.I0(XLXN_21), 
+               .I1(XLXN_20), 
+               .I2(XLXN_18), 
+               .I3(A), 
+               .O(f_7));
+   INV  XLXI_9 (.I(C), 
+               .O(XLXN_7));
+   INV  XLXI_10 (.I(D), 
+                .O(XLXN_8));
+   INV  XLXI_11 (.I(C), 
+                .O(XLXN_9));
+   INV  XLXI_12 (.I(D), 
+                .O(XLXN_10));
+endmodule
+`timescale 1ns / 1ps
+
+module g_7_MUSER_Timer(A, 
+                       B, 
+                       C, 
+                       D, 
+                       g_7);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output g_7;
+   
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire XLXN_30;
+   
+   AND2  XLXI_10 (.I0(C), 
+                 .I1(XLXN_23), 
+                 .O(XLXN_28));
+   AND2  XLXI_11 (.I0(XLXN_24), 
+                 .I1(B), 
+                 .O(XLXN_29));
+   AND2  XLXI_12 (.I0(XLXN_25), 
+                 .I1(B), 
+                 .O(XLXN_30));
+   INV  XLXI_13 (.I(B), 
+                .O(XLXN_23));
+   INV  XLXI_14 (.I(C), 
+                .O(XLXN_24));
+   INV  XLXI_15 (.I(D), 
+                .O(XLXN_25));
+   OR4  XLXI_16 (.I0(XLXN_30), 
+                .I1(A), 
+                .I2(XLXN_29), 
+                .I3(XLXN_28), 
+                .O(g_7));
+endmodule
+`timescale 1ns / 1ps
+
+module BCD_MUSER_Timer(Bit1, 
+                       Bit2, 
+                       Bit3, 
+                       Bit4, 
+                       a_Segment, 
+                       b_Segment, 
+                       c_Segment, 
+                       d_Segment, 
+                       e_Segment, 
+                       f_Segment, 
+                       g_Segment);
+
+    input Bit1;
+    input Bit2;
+    input Bit3;
+    input Bit4;
+   output a_Segment;
+   output b_Segment;
+   output c_Segment;
+   output d_Segment;
+   output e_Segment;
+   output f_Segment;
+   output g_Segment;
+   
+   
+   g_7_MUSER_Timer  XLXI_7 (.A(Bit1), 
+                           .B(Bit2), 
+                           .C(Bit3), 
+                           .D(Bit4), 
+                           .g_7(g_Segment));
+   a_7_MUSER_Timer  XLXI_9 (.A(Bit1), 
+                           .B(Bit2), 
+                           .C(Bit3), 
+                           .D(Bit4), 
+                           .a_7(a_Segment));
+   b_7_MUSER_Timer  XLXI_10 (.B(Bit2), 
+                            .C(Bit3), 
+                            .D(Bit4), 
+                            .b_7(b_Segment));
+   c_7_MUSER_Timer  XLXI_11 (.B(Bit2), 
+                            .C(Bit3), 
+                            .D(Bit4), 
+                            .c_7(c_Segment));
+   d_7_MUSER_Timer  XLXI_12 (.A(Bit1), 
+                            .B(Bit2), 
+                            .C(Bit3), 
+                            .D(Bit4), 
+                            .d_7(d_Segment));
+   e_7_MUSER_Timer  XLXI_13 (.B(Bit2), 
+                            .C(Bit3), 
+                            .D(Bit4), 
+                            .e_7(e_Segment));
+   f_7_MUSER_Timer  XLXI_14 (.A(Bit1), 
+                            .B(Bit2), 
+                            .C(Bit3), 
+                            .D(Bit4), 
+                            .f_7(f_Segment));
+endmodule
+`timescale 1ns / 1ps
+
+module Mux16_MUSER_Timer(clk_select, 
+                         data, 
+                         A, 
+                         B, 
+                         C, 
+                         D);
+
+    input clk_select;
+    input [15:0] data;
+   output A;
+   output B;
+   output C;
+   output D;
+   
+   wire S0;
+   wire S1;
+   wire XLXN_1;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_113;
+   wire XLXN_115;
+   
+   (* HU_SET = "XLXI_2_12" *) 
+   M4_1E_HXILINX_Timer  XLXI_2 (.D0(data[0]), 
+                               .D1(data[4]), 
+                               .D2(data[8]), 
+                               .D3(data[12]), 
+                               .E(XLXN_1), 
+                               .S0(S0), 
+                               .S1(S1), 
+                               .O(A));
+   VCC  XLXI_3 (.P(XLXN_1));
+   (* HU_SET = "XLXI_8_13" *) 
+   M4_1E_HXILINX_Timer  XLXI_8 (.D0(data[1]), 
+                               .D1(data[5]), 
+                               .D2(data[9]), 
+                               .D3(data[13]), 
+                               .E(XLXN_4), 
+                               .S0(S0), 
+                               .S1(S1), 
+                               .O(B));
+   VCC  XLXI_9 (.P(XLXN_4));
+   (* HU_SET = "XLXI_10_14" *) 
+   M4_1E_HXILINX_Timer  XLXI_10 (.D0(data[2]), 
+                                .D1(data[6]), 
+                                .D2(data[10]), 
+                                .D3(data[14]), 
+                                .E(XLXN_5), 
+                                .S0(S0), 
+                                .S1(S1), 
+                                .O(C));
+   VCC  XLXI_11 (.P(XLXN_5));
+   (* HU_SET = "XLXI_12_15" *) 
+   M4_1E_HXILINX_Timer  XLXI_12 (.D0(data[3]), 
+                                .D1(data[7]), 
+                                .D2(data[11]), 
+                                .D3(data[15]), 
+                                .E(XLXN_6), 
+                                .S0(S0), 
+                                .S1(S1), 
+                                .O(D));
+   VCC  XLXI_13 (.P(XLXN_6));
+   (* HU_SET = "XLXI_27_16" *) 
+   CB2CE_HXILINX_Timer  XLXI_27 (.C(clk_select), 
+                                .CE(XLXN_113), 
+                                .CLR(XLXN_115), 
+                                .CEO(), 
+                                .Q0(S0), 
+                                .Q1(S1), 
+                                .TC());
+   VCC  XLXI_28 (.P(XLXN_113));
+   GND  XLXI_29 (.G(XLXN_115));
+endmodule
+`timescale 1ns / 1ps
+
+module Timer(clk_20MHz, 
+             pause_SW, 
+             reset_SW, 
+             A_7, 
+             blink_dot, 
+             B_7, 
+             com0, 
+             com1, 
+             com2, 
+             com3, 
+             C_7, 
+             D_7, 
+             E_7, 
+             F_7, 
+             G_7);
+
+    input clk_20MHz;
+   (* CLOCK_DEDICATED_ROUTE = "FALSE" *) 
+    input pause_SW;
+   (* CLOCK_DEDICATED_ROUTE = "FALSE" *) 
+    input reset_SW;
+   output A_7;
+   output blink_dot;
+   output B_7;
+   output com0;
+   output com1;
+   output com2;
+   output com3;
+   output C_7;
+   output D_7;
+   output E_7;
+   output F_7;
+   output G_7;
+   
+   wire [15:0] data;
+   wire XLXN_36;
+   wire XLXN_91;
+   wire XLXN_92;
+   wire XLXN_93;
+   wire XLXN_94;
+   wire XLXN_107;
+   wire XLXN_123;
+   wire XLXN_135;
+   wire XLXN_146;
+   wire XLXN_148;
+   wire com2_DUMMY;
+   
+   assign com2 = com2_DUMMY;
+   controller_MUSER_Timer  XLXI_8 (.pause_button(pause_SW), 
+                                  .reset_button(reset_SW), 
+                                  .pauseTime(XLXN_107), 
+                                  .resetTime(XLXN_146));
+   AND2  XLXI_16 (.I0(XLXN_107), 
+                 .I1(XLXN_148), 
+                 .O(XLXN_135));
+   BCD_MUSER_Timer  XLXI_20 (.Bit1(XLXN_94), 
+                            .Bit2(XLXN_93), 
+                            .Bit3(XLXN_92), 
+                            .Bit4(XLXN_91), 
+                            .a_Segment(A_7), 
+                            .b_Segment(B_7), 
+                            .c_Segment(C_7), 
+                            .d_Segment(D_7), 
+                            .e_Segment(E_7), 
+                            .f_Segment(F_7), 
+                            .g_Segment(G_7));
+   Mux16_MUSER_Timer  XLXI_26 (.clk_select(XLXN_123), 
+                              .data(data[15:0]), 
+                              .A(XLXN_91), 
+                              .B(XLXN_92), 
+                              .C(XLXN_93), 
+                              .D(XLXN_94));
+   selectCommon_MUSER_Timer  XLXI_27 (.clk_select(XLXN_123), 
+                                     .com0(com0), 
+                                     .com1(com1), 
+                                     .com2(com2_DUMMY), 
+                                     .com3(com3));
+   AND2B1  XLXI_31 (.I0(com2_DUMMY), 
+                   .I1(XLXN_135), 
+                   .O(blink_dot));
+   counter00to99_MUSER_Timer  XLXI_35 (.Clock(XLXN_36), 
+                                      .reset_button(XLXN_146), 
+                                      .data(data[15:8]));
+   DividerBy10_MUSER_Timer  XLXI_39 (.CLR(XLXN_146), 
+                                    .in_clk(clk_20MHz), 
+                                    .out_clk(XLXN_123));
+   Divider1Hz_MUSER_Timer  XLXI_40 (.CLK(XLXN_146), 
+                                   .clk_in(clk_20MHz), 
+                                   .pause_button(XLXN_107), 
+                                   .clk_out(XLXN_148));
+   controller00to59_MUSER_Timer  XLXI_42 (.Clock(XLXN_135), 
+                                         .reset_button(XLXN_146), 
+                                         .data(data[7:0]), 
+                                         .SW_reset(XLXN_36));
+endmodule

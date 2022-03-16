@@ -1,0 +1,15 @@
+net "A_7" loc = p41;
+net "B_7" loc = p40;
+net "C_7" loc = p35;
+net "D_7" loc = p34;
+net "E_7" loc = p32;
+net "F_7" loc = p29;
+net "G_7" loc = p27;
+net "com0" loc = p44;
+net "com1" loc = p43;
+net "com2" loc = p33;
+net "com3" loc = p30;
+net "blink_dot" loc = p26;
+net "clk_20MHz" loc = p123;
+net "pause_SW" loc = p45;
+net "reset_SW" loc = p46;

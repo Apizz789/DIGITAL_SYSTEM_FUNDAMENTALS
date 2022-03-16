@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym pause_resume E:/digit_program/project/ClockTimer/pause_resume.sch E:/digit_program/project/ClockTimer/pause_resume.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym pause_resume E:/digit_program/project/ClockTimer/pause_resume.sch E:/digit_program/project/ClockTimer/pause_resume.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym pause_resume E:/digit_program/project/ClockTimer/pause_resume.sch E:/digit_program/project/ClockTimer/pause_resume.sym 
